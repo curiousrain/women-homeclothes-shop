@@ -5,3 +5,86 @@ body{
     width: 80vw;
     margin: 0 auto;
 }
+/*блок_Каталог_Начало */
+.catalog_flex-container{
+    display:inline-flex;
+    gap: 1em;
+    width: 80vw;
+    justify-content: space-between;
+    /* height: 27em; */
+}
+.catalog_title{
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F4538;
+    font-family: 'Roboto', sans-serif
+    /* откорректировать цвета  */
+}
+.catalog_flex-container-1_image{
+    /* Высоту картинок сделать одинакой с высотой лукбука (скоректировать height у .catalog_flex-container) */
+    max-width: 100%;
+    max-height: 100%;
+}
+.catalog_btn{
+    position: relative;
+    text-align: center;
+    margin: 3em;
+}
+.catalog_btn_open-catalog{
+    /* откорректировать цвета  */
+    /* background-color: #CADABA; */
+    text-decoration: none;
+    background-color: #dcf1c5;
+    color: #2F4538;
+    border: 1px solid #2F4538;
+    font-size: 1em;
+    padding: 1em 2em 1em 2em;
+}
+.catalog_btn_open-catalog:hover{
+    vertical-align: middle;
+    background-color: #d1f1af;
+}
+.catalog_btn_open-catalog:active{
+    vertical-align: middle;
+    background-color: #bbe391;
+    color: black;
+}
+.catalog_flex-container-1_image-desc-1,
+.catalog_flex-container-1_image-desc-2,
+.catalog_flex-container-2_image-desc-1,
+.catalog_flex-container-2_image-desc-2,
+.catalog_flex-container-3_image-desc-1,
+.catalog_flex-container-3_image-desc-2{
+    position: relative;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.catalog_flex-container-1_image-desc-1,
+.catalog_flex-container-2_image-desc-1,
+.catalog_flex-container-3_image-desc-1{
+    color: #2F4538;
+    height: 1.5em;
+}
+.catalog_flex-container-1_image-desc-2,
+.catalog_flex-container-2_image-desc-2,
+.catalog_flex-container-3_image-desc-2{
+    color: #2F4538;
+    opacity: .3;
+}
+/* блок_Каталог_Мобильная версия */
+@media (min-width: 0px) and (max-width: 767px)
+{
+    .catalog_flex-container-2{
+        display: none;
+    }
+    .catalog_btn{
+        margin: 3em;
+    }
+    .catalog_flex-container{
+        display:inline-flex;
+        width: 80vw;
+        justify-content: center;
+    }
+}
+/* Каталог_Конец*/
