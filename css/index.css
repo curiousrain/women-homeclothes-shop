@@ -8,8 +8,8 @@ body{
 
 /*Стили блока о компании*/
 
-.about-text
-,.about-title {
+.about-text,
+.about-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 140%;
@@ -24,7 +24,7 @@ body{
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #F1EADC;
+    background-color: #CADABA;
     padding: 50px 10vw 30px 10vw;
 }
 
@@ -54,7 +54,12 @@ footer {
 }
 
 .logo {
-    margin-right: 7vw;
+    margin-right: 4vw;
+    padding-bottom: 10px;
+}
+
+.logo-img {
+    width: 10em;
 }
 
 .time {
@@ -71,5 +76,5 @@ a {
 .size,
 .buy,
 .about-comp {
-    margin-left: 10px;
+    margin-left: 15px;
 }
