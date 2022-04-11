@@ -8,75 +8,76 @@ body{
 
 /*Стили блока о компании*/
 
+.about-text
+,.about-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+        
 .about-text,
-        .about-title {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            line-height: 140%;
-        }
+.about-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+}
 
-        .about-text,
-        .about-title {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            line-height: 140%;
-        }
+.about-text {
+    padding-bottom: 70px;
+}
 
-        .about-text {
-            padding-bottom: 70px;
-        }
+/*Стили блока футер*/
 
-        /*Стили блока футер*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1EADC;
+    padding: 50px 10vw 30px 10vw;
+}
 
-        footer {
-            display: flex;
-            flex-direction: column;
-            background-color: #F1EADC;
-            padding: 50px 10vw 30px 10vw;
-        }
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
 
-        .footer-menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding-bottom: 30px;
-        }
+.footer-menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-        .footer-menu2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .footerline,
-        .footer2line {
-            padding-bottom: 20px;
-        }
+.footerline,
+.footer2line {
+    padding-bottom: 20px;
+}
 
 
-        .footer2line {
-            max-width: 200px;
-        }
+.footer2line {
+    max-width: 200px;
+}
 
-        .logo {
-            margin-right: 7vw;
-        }
+.logo {
+    margin-right: 7vw;
+}
 
-        .time {
-            margin-left: 7vw;
-        }
+.time {
+    margin-left: 7vw;
+}
 
-        a {
-            color: black;
-            text-decoration: none;
-        }
+a {
+    color: black;
+    text-decoration: none;
+}
 
-        .main-page,
-        .katalog,
-        .size,
-        .buy,
-        .about-comp {
-            margin-left: 10px;
-        }
+.main-page,
+.katalog,
+.size,
+.buy,
+.about-comp {
+    margin-left: 10px;
+}
