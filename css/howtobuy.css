@@ -12,7 +12,7 @@ body{
 .delivery-payment, 
 .delivery-shipping, 
 .delivery-return {
-    margin: 100px;
+    margin: 6.25rem;
 }
 
 .title-delivery, 
@@ -24,20 +24,56 @@ body{
 }
 
 .title-delivery {
-    font-size: 55px;
+    font-size: 3.4375rem;
 }
 
 .subtitle-delivery {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .content-delivery {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .content-delivery__items {
     list-style-type: circle;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+    .delivery-payment, 
+    .delivery-shipping, 
+    .delivery-return {
+        width: 40%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .delivery-payment, 
+    .delivery-shipping, 
+    .delivery-return {
+        width: 40%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .delivery-payment, 
+    .delivery-shipping, 
+    .delivery-return {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .delivery-payment, 
+    .delivery-shipping, 
+    .delivery-return {
+        width: 100%;
+    }
 }
 
 /*Стили блока футер*/
