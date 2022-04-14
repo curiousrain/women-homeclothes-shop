@@ -1,0 +1,297 @@
+.search {
+    width: 80vw;
+    margin: 0 auto;
+    min-width: 270px;
+    font-family: 'Roboto', sans-serif;
+
+    &__head {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.5em;
+        letter-spacing: 0.02em;
+    }
+
+    &__filters {}
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em 1em;
+        margin: 1em 0 3em;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
+// .filters {
+//     &__slider {}
+
+//     &__dropdown {}
+// }
+
+.shorts {
+    &__pic {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5em;
+        height: fit-content;
+        gap: 1em;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    &__price {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1em;
+        color: #998E78;
+    }
+}
+
+.search-button {
+    display: flex;
+    height: 41px;
+    width: 41px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+
+    &:hover {
+        background-color: gray;
+    }
+
+    &:active,
+    &_active {
+        background-color: #000000;
+        color: white;
+    }
+
+    &_arrow {
+        border: none;
+        width: auto;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translate(10px);
+            background-color: transparent;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+        &__head {
+            font-size: 2em;
+            line-height: 1.5em;
+            letter-spacing: 0.02em;
+            word-break: initial;
+        }
+
+        &__filters {}
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3em 1em;
+            margin: 1em 0 3em;
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+        }
+    }
+
+    .shorts {
+        &__pic {
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 0.5em;
+            height: fit-content;
+            gap: 1em;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        &__price {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1em;
+            color: #998E78;
+        }
+    }
+
+    .search-button {
+        display: flex;
+        height: 41px;
+        width: 41px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 1em;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 1.2em;
+        letter-spacing: 0.02em;
+
+        &:hover {
+            background-color: gray;
+        }
+
+        &:active,
+        &_active {
+            background-color: #000000;
+            color: white;
+        }
+
+        &_arrow {
+            border: none;
+            width: auto;
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: translate(10px);
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search {
+        &__head {
+            font-size: 2em;
+            line-height: 1.5em;
+            letter-spacing: 0.02em;
+            word-break: initial;
+        }
+
+        &__filters {}
+
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3em 1em;
+            margin: 1em 0 3em;
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+        }
+    }
+
+    .shorts {
+        &__pic {
+            width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 0.5em;
+            height: fit-content;
+            gap: 1em;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        &__price {
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 1em;
+            color: #998E78;
+        }
+    }
+
+    .search-button {
+        display: flex;
+        height: 64px;
+        width: 64px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 1em;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 1.2em;
+        letter-spacing: 0.02em;
+
+        &:hover {
+            background-color: gray;
+        }
+
+        &:active,
+        &_active {
+            background-color: #000000;
+            color: white;
+        }
+
+        &_arrow {
+            border: none;
+            width: auto;
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: translate(10px);
+                background-color: transparent;
+            }
+        }
+    }
+}
