@@ -1,0 +1,374 @@
+@mixin boldFont {
+    font-weight: 400;
+}
+
+@mixin lightFont {
+    font-weight: 300;
+}
+
+$borderColor: #A8E4A0;
+$buttonColor: #ACE1AF;
+$buttonPressed: darken($buttonColor, 10);
+
+.main {
+    width: 80vw;
+    margin: 0 auto;
+    min-width: 270px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+
+    &__confirmation {
+        text-align: center;
+        margin: 2em auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    &__order {
+        text-align: center;
+    }
+
+    &__items,
+    &__total {
+        display: grid;
+        grid-template-columns: 2fr auto;
+    }
+
+    &__total {
+        margin: 1em 0;
+        line-height: 1em;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: #C3F2BB;
+        margin: 1.2em 0;
+        padding: 10px;
+    }
+
+    &__border {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin: 4vh 0;
+        gap: 2vh;
+        border: 1px solid $borderColor;
+        padding: 1em 1em 0;
+        align-items: center;
+        text-align: center
+    }
+}
+
+.confirmation {
+    &__head {
+        @include boldFont();
+    }
+
+    &__subhead {
+        @include boldFont();
+    }
+}
+
+.order {
+    &__number {
+        @include boldFont();
+    }
+
+    &__line {
+        background: $borderColor;
+        border: none;
+        height: 1px;
+        margin-bottom: 30px;
+    }
+}
+
+.items {
+
+    &__product,
+    &__cost {
+        margin-bottom: 1em;
+        line-height: 1em;
+        font-size: 1.1em;
+    }
+
+    &__product {
+        grid-column: 1/2;
+    }
+
+    &__cost {
+        grid-column: 2/3;
+    }
+}
+
+.total {
+
+    &__in-all {
+        grid-column: 1/2;
+    }
+
+    &__ruble {
+        grid-column: 2/3;
+    }
+}
+
+.info {
+    &__customer {
+        text-align: center;
+        margin: 0;
+        font-size: 1.3em;
+    }
+}
+
+.customer {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.1em;
+        line-height: 1.2em;
+        gap: 1em 0;
+    }
+
+    &__labels {
+        grid-column: 1/2;
+
+    }
+
+    &__value {
+        grid-column: 2/3;
+        justify-self: right;
+        word-break: initial;
+    }
+}
+
+.border {
+    &__cofirmed {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        padding: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    &__img {
+        &_small {
+            height: 35px;
+        }
+
+        &_big {
+            display: none;
+        }
+    }
+
+    &__connection {
+        margin-bottom: 1em;
+    }
+
+    &__button {
+        text-decoration: none;
+        color: black;
+        border: none;
+        background-color: $buttonColor;
+        padding: 1em;
+        margin-bottom: 0.5em;
+        text-align: center;
+
+        &:active {
+            background-color: $buttonPressed;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .main {
+        &__info {
+            padding: 1em;
+        }
+
+        &__border {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: repeat(2, 1fr);
+            justify-items: center;
+            margin: 4vh 0;
+            gap: 1em;
+            align-items: center;
+            padding: 1em;
+        }
+    }
+
+    .border {
+        &__cofirmed {
+            grid-row: 1/2;
+            grid-column: 2/3;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__img {
+            &_small {
+                display: none;
+            }
+
+            &_big {
+                display: block;
+                grid-row: 1/3;
+                grid-column: 1/2;
+                width: 9vw;
+            }
+        }
+
+        &__connection {
+            grid-row: 2/3;
+            grid-column: 2/3;
+            margin: 0;
+        }
+
+        &__button {
+            grid-row: 1/3;
+            grid-column: 3/4;
+            margin: 0;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .main {
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 0 10px;
+
+        &__confirmation {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            margin: 2em 0;
+        }
+
+        &__order {
+            text-align: left;
+            grid-row: 2/3;
+            grid-column: 1/3;
+        }
+
+        &__items {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            padding-top: 1em;
+        }
+
+        &__total {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            align-self: end;
+            margin: 0;
+            line-height: 2em;
+            font-size: 2em;
+        }
+
+        &__info {
+            grid-column: 2/3;
+            grid-row: 3/5;
+            margin: 0;
+            align-self: start;
+        }
+
+        &__border {
+            grid-template-rows: repeat(2, auto);
+            grid-column: 1/3;
+            grid-row: 5/6;
+        }
+    }
+
+    .confirmation {
+        &__head {
+            text-align: left;
+            justify-self: left;
+            font-size: 3.4em;
+            letter-spacing: 0.02em;
+        }
+
+        &__subhead {
+            font-size: 2.5em;
+            line-height: 1.2em;
+            letter-spacing: 0.02em;
+        }
+
+        &__thanks {
+            font-size: 1.5em;
+            line-height: 2.5em;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    .order {
+        &__number {
+            line-height: 2em;
+            font-size: 2em;
+        }
+
+        &__line {
+            margin: 0;
+        }
+    }
+
+    .items {
+
+        &__product,
+        &__cost {
+            margin-bottom: 1em;
+            line-height: 2em;
+        }
+    }
+
+    .border {
+        &__cofirmed {
+            justify-self: left;
+            font-size: 1.5em;
+            line-height: 2.1em;
+            letter-spacing: 0.02em;
+
+        }
+
+        &__img {
+            &_small {
+                display: none;
+            }
+
+            &_big {
+                width: 65px;
+            }
+        }
+
+        &__connection {
+            justify-self: left;
+            font-size: 1em;
+            line-height: 1.5em;
+            letter-spacing: 0.02em;
+        }
+
+        &__button {
+            grid-row: 1/3;
+            grid-column: 3/4;
+            margin: 0;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 22px 50px;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+    }
+}
