@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -43,25 +43,28 @@
     </header>
     <h2> Свитшот 1 </h2>
     <div class="main">
-        <div class="item-foto"> <img src="assets/image/Фото товара.png" alt="foto"> </div>
-        <div class="item-info">
-            <div class="item-prise" style="height: 3vh;"> 1000, 00 рублей </div>
-            <h3> Выберете размер </h3>
-            <div class="item-size">
-                <div class="item-size-number"><a href="#" class="item-size-number-button">S</a></div>
-                <div class="item-size-number"><a href="#" class="item-size-number-button">M</a></div>
-                <div class="item-size-number"><a href="#" class="item-size-number-button">L</a></div>
-                <div class="item-size-number"><a href="#" class="item-size-number-button">XL</a></div>
-            </div>
-            <div class="item-discription">какое-то описание позиции </div>
-            <div class="item-basket">
-                <form>
-                    <input type="number" id="number" placeholder="1" class="item-basket-number">
-                </form>
+        <h2> Свитшот</h2>
+        <div class="item-content">
+            <div class="item-foto"> <img class="foto" src="assets/image/Фото товара.png" alt="foto"> </div>
+            <div class="item-info">
+                <div class="item-prise"> 1000 рублей </div>
+                <h3> Выберите размер </h3>
+                <div class="item-size">
+                    <div class="item-size-number"><a href="#" class="item-size-number-button">S</a></div>
+                    <div class="item-size-number"><a href="#" class="item-size-number-button">M</a></div>
+                    <div class="item-size-number"><a href="#" class="item-size-number-button">L</a></div>
+                    <div class="item-size-number"><a href="#" class="item-size-number-button">XL</a></div>
+                </div>
+                <div class="item-discription">какое-то описание позиции </div>
+                <div class="item-basket">
+                    <form>
+                        <input type="number" id="number" placeholder="1" class="item-basket-number">
+                    </form>
 
-                <div class="item-basket-button"> <a href="#" class="item-button">Добавить в корзину</a></div>
+                    <div class="item-basket-button"> <a href="#" class="item-button">Добавить в корзину</a></div>
+                </div>
             </div>
-        </div> 
+        </div>
     </div>
     <footer class="footer">
         <div class="footer-menu">
@@ -70,48 +73,51 @@
                     <img src="assets/image/logo.png" alt="логотип" class="logo-img">
                 </a>
             </div>
-
-            <div class="first-column">
-                <div class="footerline main-page">
-                    <a href="#">Главная</a>
+            <div class="central-footermenu">
+                <div class="first-column">
+                    <div class="footerline main-page">
+                        <a href="#">Главная</a>
+                    </div>
+                    <div class="footerline katalog">
+                        <a href="#">Каталог</a>
+                    </div>
+                    <div class="footerline size">
+                        <a href="#">Размерная сетка</a>
+                    </div>
                 </div>
-                <div class="footerline katalog">
-                    <a href="#">Каталог</a>
-                </div>
-                <div class="footerline size">
-                    <a href="#">Размерная сетка</a>
+                <div class="second-column">
+                    <div class="footerline buy">
+                        <a href="#">Как купить</a>
+                    </div>
+                    <div class="footerline about-comp">
+                        <a href="#about">О компании</a>
+                    </div>
+                    <div class="time">11:00-21:00</div>
                 </div>
             </div>
 
-            <div class="second-column">
-                <div class="footerline buy">
-                    <a href="#">Как купить</a>
-                </div>
-                <div class="footerline about-comp">
-                    <a href="#about">О компании</a>
-                </div>
-                <div class="time">11:00-21:00</div>
-            </div>
         </div>
 
         <div class="footer-menu2">
-            <div class="footer2line">
-                ©Все права защищены
+            <div class="footer2line confident">
+                ©Все права защищены <br>
                 <a href="#">Политика конфиденциальности</a>
                 <a href="#">Публичная оферта</a>
             </div>
             <div class="footer2line">
-                <a href="#">hello@example.ru</a>
-                Подпишись на нас в телеграмм
+                <a href="#">hello@example.ru</a> <br>
                 <a href="#">
+                    Подпишись на нас в телеграмм
                     <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
                 </a>
             </div>
         </div>
     </footer>
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>
