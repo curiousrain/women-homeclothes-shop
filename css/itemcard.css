@@ -1,43 +1,44 @@
 body {
-    display: flex;
-    flex-flow: column;
+    /*display: flex;
+    flex-flow: column;*/
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
+
+
+
 .main {
-    flex: 1;
+    /*flex: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-right: 10%;
     height: 90vh;
     margin-top: 5vh;
-    margin-bottom: 10vh;
-}
-
-h2 {
-    padding: 0%;
-    margin-left: 10vh;
-}
-
-.item-foto {
-    flex-direction: column;
-    height: 70vh;
-}
-
-.item-info {
-    margin-left: 10vh;
-    margin-top: 10vh;
+    margin-bottom: 5vh;*/
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 73vh;
 }
 
 .item-prise {
-    flex-direction: row;
-    flex-shrink: 1;
+    font-size: 2em;
     color: #998E78;
+    padding-bottom: 10px;
+    /*flex-shrink: 1;*/
+    /*
     margin-left: 0%;
-    font-size: 40px;
+    
     margin-bottom: 5vh;
+    margin-top: 2vh;*/
+}
+
+.item-info {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 .item-size {
@@ -45,19 +46,20 @@ h2 {
     height: 41px;
     display: flex;
     flex-direction: row;
-    padding-bottom: 9px;
+    padding-bottom: 25px;
 }
 
 .item-size-number {
     display: flex;
     width: 41px;
     height: 41px;
-    margin-right: 14px;
+    margin-right: 14px; 
 }
+
 /*size button*/
 .item-size-number-button {
     width: 41px;
-    height: 41px;
+    /*height: 41px;*/
     border: 1px solid black;
     text-align: center;
     font-style: normal;
@@ -70,17 +72,19 @@ h2 {
     font-weight: 400;
     color: #000000;
     background: #ffffff;
-    transition: .3s; 
+    transition: .3s;
+    padding-top: 8px;
+    
 }
 
 .item-size-number-button:hover {
     background: #000000;
-    box-shadow: 0 15px 20px #998E78(46, 229, 157, 0.4);
+    box-shadow: 0 15px 20px  (46, 229, 157, .4);
     color: white;
 }
 
 .item-discription {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .item-basket {
@@ -95,13 +99,16 @@ h2 {
     width: 59px;
     border: 1px solid #AFAFAF;
     align-self: center;
+    text-align: center;
+    font-size: 20px;
 }
 
 /*add to basket button*/
 .item-button {
     text-decoration: none;
     display: flex;
-    width: 268px;
+    flex-wrap: wrap;
+    /*width: 15vw;*/
     height: 61px;
     left: 79px;
     top: 0px;
@@ -109,7 +116,7 @@ h2 {
     text-align: center;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
+    /*margin: 20px;*/
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
@@ -119,18 +126,64 @@ h2 {
     background: #998E78;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     transition: .3s;
-
 }
 
 .item-button:hover {
     background: #8e7f61;
-    box-shadow: 0 15px 20px #998E78(46, 229, 157, 0.4);
+    box-shadow: 0 15px 20px #998E78 (46, 229, 157, .4);
     color: white;
-    transform: translateY(-2px);
+    transform: translateY (-2px);
 }
 
-@media (max-width: 768px) {
-    .main {
+@media (max-width: 769px) {
+    .foto {
+        width: 70vw;
+        margin-bottom: 30px;
+        
+    }
+    .item-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 770px) and (max-width: 1099px) {
+    .foto {
+        width: 35vw;
+        margin-bottom: 40px;
+
+    }
+    .item-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item-info {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .foto {
+        width: 40vw;
+        margin-bottom: 40px;
+    }
+    .item-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item-info {
+        margin-left: 35px;
+    }
+}
+
+/*@media (max-width: 768px){
+   .main {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -140,15 +193,172 @@ h2 {
     height: 90vh;
     margin-top: 5vh;
     margin-bottom: 10vh;
-    } 
-
-    .item-foto {
+} 
+.item-foto {
     flex-direction: column;
     height: 20vh;
-    }
-
-    .item-info {
+}
+.item-info {
     margin-left:5vh;
     margin-top: 5vh;
+}
+}*/
+
+/*Стили блока футер*/
+/*div {
+    border: 1px solid red;
+}*/
+
+
+@media (max-width: 769px) {
+    .footer {
+        padding: 50px 10vw 30px 10vw;
     }
+
+    .logo {
+        margin-right: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .central-footermenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    
+    .footer-menu2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    }
+
+@media (min-width: 770px) and (max-width: 1099px) {  
+    .footer {
+        padding: 50px 6vw 30px 6vw;
+    }
+
+    .logo {
+        margin-right: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .central-footermenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-column {
+        margin-right: 20vw;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /*flex-wrap: wrap;*/
+        padding-bottom: 30px;
+        padding-right: 4em;
+    }
+    
+    .footer-menu2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    }
+
+@media (min-width: 1100px) {
+    .central-footermenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-right: 8vw;
+        padding-bottom: 10px;
+    }
+
+    .footer {
+        padding: 50px 6vw 30px 6vw;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /*flex-wrap: wrap;*/
+        padding-bottom: 30px;
+        
+    }
+
+    .first-column,
+    .second-column {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer-menu2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .time {
+        margin-left: 8vw;
+        padding-top: 15px;
+    }
+
+    .main-page,
+    .buy,
+    .katalog,
+    .size,
+    .about-comp {
+        margin-left: 25px;  
+        padding-top: 15px;
+    }   
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #CADABA;
+}
+
+.footerline,
+.footer2line {
+    padding-bottom: 20px;
+}
+
+.footer2line {
+    max-width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 180%;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    
+}
+
+.confident {
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    width: 10em;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
 }
