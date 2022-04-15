@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/ordering.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="ordering">
+        <h1 class="ordering__title">Оформление заказа</h1>
+        <div class="ordering__box">
+            <form class="ordering__details" action="" method="">
+                <label class="ordering__details-title" for="user-name"><span class="required">*</span>Фамилия Имя Отчество</label>
+                <input id="user-name" class="ordering__details-field" type="text" placeholder="Александрова Александра Александровна" />
+                <label class="ordering__details-title" for="user-email"><span class="required">*</span>Электронная почта</label>
+                <input id="user-email" class="ordering__details-field" type="email" placeholder="example@yandex.ru" />
+                <label class="ordering__details-title" for="user-phone"><span class="required">*</span>Номер телефона</label>
+                <input id="user-phone" class="ordering__details-field" type="tel" placeholder="+7(999)999-9999" />
+            </form>
+            <form class="ordering__details" action="" method="">
+                <label class="ordering__details-title" for="user-index"><span class="required">*</span>Почтовый индекс</label>
+                <input id="user-index" class="ordering__details-field" type="text" placeholder="123456" />
+                <label class="ordering__details-title" for="user-city"><span class="required">*</span>Город</label>
+                <input id="user-city" class="ordering__details-field" type="text" placeholder="г. Санкт-Петербург" />
+                <label class="ordering__details-title" for="user-street"><span class="required">*</span>Улица</label>
+                <input id="user-street" class="ordering__details-field" type="text" placeholder="ул. Ленина" />
+                <label class="ordering__details-title" for="user-house"><span class="required">*</span>Дом</label>
+                <input id="user-house" class="ordering__details-field" type="text" placeholder="д.5с1" />
+                <label class="ordering__details-title" for="user-apartment"><span class="required">*</span>Квартира</label>
+                <input id="user-apartment" class="ordering__details-field" type="text" placeholder="кв.55" />
+            </form>
+            <form class="ordering__details" action="" method="">
+                <label class="ordering__details-title" for="user-comment">Комментарий к заказу</label>
+                <textarea id="user-comment" class="ordering__details-field" required placeholder="Напишите текст здесь"></textarea>
+            </form>
+            <p class="ordering__details-title">Ваш заказ</p>
+            <div class="ordering__details-confirmation">
+                <span class="ordering__details-item">Товар</span>
+                <span class="ordering__details-cost">Цена</span>
+                <span class="ordering__details-product1">Футболка арт.001</span>
+                <span class="ordering__details-price1">999 руб.</span>
+                <span class="ordering__details-product2">Брюки арт.088</span>
+                <span class="ordering__details-price2">3 790 руб.</span>
+                <span class="ordering__details-total">Итого</span>
+                <span class="ordering__details-total">4 789 руб.</span>
+            </div>
+            <p class="ordering__payment-title">Способы оплаты<br /></p>
+            <div class="ordering__payment-choice">
+                <input id="payment-cash" class="ordering__paiment-option" type="radio" name="choice" />
+                <label for="">Безналичная оплата на сайте</label><br />
+                <input id="payment-card" class="ordering__paiment-option" type="radio" name="choice" />
+                <label for="">Наличными при получении</label>
+            </div>
+            <div>
+                <input type="submit" class="ordering__payment-button" value="Отправить">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
