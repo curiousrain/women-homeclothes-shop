@@ -47,7 +47,7 @@
   line-height: 1.5em;
 }
 .shorts__price {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1em;
   line-height: 1em;
   color: #998E78;
@@ -88,10 +88,11 @@
 
 @media screen and (min-width: 768px) {
   .search__head {
-    font-size: 2em;
+    font-size: 3em;
     line-height: 1.5em;
     letter-spacing: 0.02em;
     word-break: initial;
+    font-weight: 500;
   }
   .search__items {
     display: grid;
@@ -129,7 +130,7 @@
     line-height: 1.5em;
   }
   .shorts__price {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1em;
     line-height: 1em;
     color: #998E78;
@@ -170,10 +171,10 @@
 }
 @media screen and (min-width: 1024px) {
   .search__head {
-    font-size: 2em;
-    line-height: 1.5em;
+    font-weight: 500;
+    font-size: 3.4em;
+    line-height: 2em;
     letter-spacing: 0.02em;
-    word-break: initial;
   }
   .search__items {
     display: grid;
@@ -207,13 +208,15 @@
     text-decoration: none;
     color: black;
     font-weight: 500;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 2em;
+    line-height: 1.75em;
+    letter-spacing: 0.02em;
   }
   .shorts__price {
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1em;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    letter-spacing: 0.02em;
     color: #998E78;
   }
 
@@ -227,7 +230,7 @@
     box-sizing: border-box;
     text-decoration: none;
     color: black;
-    margin-bottom: 1em;
+    margin-bottom: 6.5em;
     font-size: 1em;
     font-weight: 500;
     line-height: 1.2em;
