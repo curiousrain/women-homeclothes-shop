@@ -9,12 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <div class="container-header header__container">
+            <div class="menu-burger__header">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <img src="assets/image/header/2386.png" alt="" id="logo">
+            </div>
+            <nav class="header__nav">
+                <ul class="menu header__menu">
+                    <li><a href="" class="menu__item menu__item_border">Главная</a></li>
+                    <li><a href="" class="menu__item">Каталог</a></li>
+                    <li><a href="" class="menu__item">О компании</a></li>
+                    <li><a href="./howtobuy.html" class="menu__item">Как купить</a></li>
+                    <li><a href="" class="menu__item">Размерная сетка</a></li>
+                    <li><a href="" class="menu__item">Контакты</a></li>
+                </ul>
+            </nav>
+            <form class="form">
+                <input type="text" placeholder="Найти товар...">
+                <button type="submit"></button>
+            </form>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+        </div>
+    </header>
     <main class="container">
         <!-- Блок Каталог -->
         <div class="catalog">
@@ -118,7 +145,9 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
