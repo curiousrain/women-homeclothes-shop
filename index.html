@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <header></header>
     <main class="container">
@@ -19,22 +23,19 @@
             <div class="catalog_flex-container">
                 <div class="catalog_flex-container-1">
                     <img class="catalog_flex-container-1_image" src="assets/image/index_catalog_1.jpg"
-                        alt="Ассортимент каталога"
-                    />
+                        alt="Ассортимент каталога" />
                     <div class="catalog_flex-container-1_image-desc-1">Толстовка</div>
                     <div class="catalog_flex-container-1_image-desc-2">3200 руб.</div>
                 </div>
                 <div class="catalog_flex-container-2">
                     <img class="catalog_flex-container-1_image" src="assets/image/index_catalog_2.jpg"
-                        alt="Ассортимент каталога"
-                    />
+                        alt="Ассортимент каталога" />
                     <div class="catalog_flex-container-2_image-desc-1">Домашний комплект</div>
                     <div class="catalog_flex-container-2_image-desc-2">3000 руб.</div>
                 </div>
                 <div class="catalog_flex-container-3">
                     <img class="catalog_flex-container-1_image" src="assets/image/index_catalog_3.jpg"
-                        alt="Ассортимент каталога"
-                    />
+                        alt="Ассортимент каталога" />
                     <div class="catalog_flex-container-3_image-desc-1">Майка</div>
                     <div class="catalog_flex-container-3_image-desc-2">1700 руб.</div>
                 </div>
@@ -45,7 +46,79 @@
                 <!-- <button class="catalog_btn_open-catalog">Открыть каталог</button> -->
             </div>
         </div>
+        <div class="about">
+            <h1 class="about-title">
+                <a id="about"></a>О Компании
+            </h1>
+            <div class="about-text">
+                <p>Наш бренд желает помочь всем прекрасным женшинам носить дома комфортную и элегантную одежду.
+                    Мы нашли чудесный российский бренд трикотажной женской одежды, основанный в 2018 году - VERY NEAT.
+                </p>
+
+                <p>Компания разрабатывает коллекции в Петербурге и шьют одежду из полотен собственного производства.
+                    Поэтому
+                    могут контролировать процесс пошива изделий и качество их исполнения.
+                </p>
+
+                <p>Одежда лаконичных силуэтов и естественных цветов легко сочетается с другими предметами женского
+                    гардероба.
+                    Это позволит вам экспериментировать со стилями и одеваться со вкусом.
+                </p>
+
+                <p>Элегантность фасонов, сложные рельефные узоры и необычные принты – то, что отличает продукцию VERY
+                    NEAT и
+                    делает её узнаваемой.
+                </p>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-menu">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="логотип" class="logo-img">
+                </a>
+            </div>
+
+            <div class="first-column">
+                <div class="footerline main-page">
+                    <a href="#">Главная</a>
+                </div>
+                <div class="footerline katalog">
+                    <a href="#">Каталог</a>
+                </div>
+                <div class="footerline size">
+                    <a href="#">Размерная сетка</a>
+                </div>
+            </div>
+
+            <div class="second-column">
+                <div class="footerline buy">
+                    <a href="#">Как купить</a>
+                </div>
+                <div class="footerline about-comp">
+                    <a href="#about">О компании</a>
+                </div>
+                <div class="time">11:00-21:00</div>
+            </div>
+        </div>
+
+        <div class="footer-menu2">
+            <div class="footer2line">
+                ©Все права защищены
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Публичная оферта</a>
+            </div>
+            <div class="footer2line">
+                <a href="#">hello@example.ru</a>
+                Подпишись на нас в телеграмм
+                <a href="#">
+                    <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
+                </a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
