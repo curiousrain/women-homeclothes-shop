@@ -1,0 +1,255 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+}
+.cart {
+    padding-top:10rem ;
+    padding-bottom: 10rem;
+}
+.cart-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 5rem;
+}
+.cart-table-names {
+display: grid;
+grid-template-columns:40% 20% 20% 20%;
+justify-items: center;
+}
+.cart-products {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%; 
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.cart-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart-btn-delete{
+    width: 0.75em;
+    
+}
+.cart-product-image{
+    width: 8.5em;
+    height: 12.8125em;
+}
+.cart-product-name{
+    display: flex;
+    justify-content: center;
+}
+.cart-product-quantity >input{
+    width:0.5em ;
+    height: 1.75em;
+}
+.cart-plus-img{
+    width: 0.75em;
+}
+.cart-minus-img{
+    width: 0.75em;
+}
+.cart-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.cart-total-btn,
+.cart-registration-btn{
+    text-decoration: none;
+    display: flex;
+    width: 268px;
+    height: 61px;
+    left: 79px;
+    top: 0px;
+    padding-left: 3%;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: #ffffff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+
+}
+.cart-total-btn{
+    background-color:#CADABA;
+}
+.cart-registration-btn{
+background-color:#999950 ;
+}
+.cart-registration-btn:hover{
+    background-color: #424632;
+    transform: translateY(-2px);
+    color: white;
+}
+/*Стили блока футер*/
+/*div {
+    border: 1px solid red;
+}*/
+
+
+@media (max-width: 769px) {
+    .footer {
+        padding: 50px 10vw 30px 10vw;
+    }
+
+    .logo {
+        margin-right: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .central-footermenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+    }
+    
+    .footer-menu2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    }
+
+@media (min-width: 770px) and (max-width: 1099px) {  
+    .footer {
+        padding: 50px 6vw 30px 6vw;
+    }
+
+    .logo {
+        margin-right: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .central-footermenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-column {
+        margin-right: 20vw;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /*flex-wrap: wrap;*/
+        padding-bottom: 30px;
+        padding-right: 4em;
+    }
+    
+    .footer-menu2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    }
+
+@media (min-width: 1100px) {
+    .central-footermenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-right: 8vw;
+        padding-bottom: 10px;
+    }
+
+    .footer {
+        padding: 50px 6vw 30px 6vw;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /*flex-wrap: wrap;*/
+        padding-bottom: 30px;
+        
+    }
+
+    .first-column,
+    .second-column {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer-menu2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .time {
+        margin-left: 8vw;
+        padding-top: 15px;
+    }
+
+    .main-page,
+    .buy,
+    .katalog,
+    .size,
+    .about-comp {
+        margin-left: 25px;  
+        padding-top: 15px;
+    }   
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #CADABA;
+}
+
+.footerline,
+.footer2line {
+    padding-bottom: 20px;
+}
+
+.footer2line {
+    max-width: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 180%;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    
+}
+
+.confident {
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    width: 10em;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}

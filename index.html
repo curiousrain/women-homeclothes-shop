@@ -5,34 +5,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <div class="container-header header__container">
+            <div class="menu-burger__header">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <img src="assets/image/header/2386.png" alt="" id="logo">
+            </div>
+            <nav class="header__nav">
+                <ul class="menu header__menu">
+                    <li><a href="./index.html" class="menu__item menu__item_border">Главная</a></li>
+                    <li><a href="" class="menu__item">Каталог</a></li>
+                    <li><a href="" class="menu__item">О компании</a></li>
+                    <li><a href="./howtobuy.html" class="menu__item">Как купить</a></li>
+                    <li><a href="" class="menu__item">Размерная сетка</a></li>
+                    <li><a href="" class="menu__item">Контакты</a></li>
+                </ul>
+            </nav>
+            <form class="header__form">
+                <input class="header__input" type="text" placeholder="Найти товар...">
+                <button class="header__button" type="submit"></button>
+            </form>
+            <a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        </div>
+    </header>
     <main class="container">
+        <!--Блок Лукбук-->
+        <div id="all">
+            <input checked type="radio" name="respond" id="desktop">
+            <article id="slider">
+                <input type="radio" name="slider" id="switch1">
+                <input type="radio" name="slider" id="switch2">
+                <input type="radio" name="slider" id="switch3">
+                <input type="radio" name="slider" id="switch4">
+                <input type="radio" name="slider" id="switch5">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="image">
+                            <article><img src="/assets/image/01.jpg"></article>
+                            <article><img src="/assets/image/02.jpg"></article>
+                            <article><img src="/assets/image/03.jpg"></article>
+                            <article><img src="/assets/image/04.jpg"></article>
+                            <article><img src="/assets/image/05.jpg"></article>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+                <div id="active">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+            </article>
+        </div>
+        <!-- Блок Каталог -->
+        <div class="catalog">
+            <h2 class="catalog_title">Каталог</h2>
+            <div class="catalog_flex-container">
+                <div class="catalog_flex-container-1">
+                    <img class="catalog_flex-container-1_image" src="assets/image/index_catalog_1.jpg"
+                        alt="Ассортимент каталога" />
+                    <div class="catalog_flex-container-1_image-desc-1">Толстовка</div>
+                    <div class="catalog_flex-container-1_image-desc-2">3200 руб.</div>
+                </div>
+                <div class="catalog_flex-container-2">
+                    <img class="catalog_flex-container-1_image" src="assets/image/index_catalog_2.jpg"
+                        alt="Ассортимент каталога" />
+                    <div class="catalog_flex-container-2_image-desc-1">Домашний комплект</div>
+                    <div class="catalog_flex-container-2_image-desc-2">3000 руб.</div>
+                </div>
+                <div class="catalog_flex-container-3">
+                    <img class="catalog_flex-container-1_image" src="assets/image/index_catalog_3.jpg"
+                        alt="Ассортимент каталога" />
+                    <div class="catalog_flex-container-3_image-desc-1">Майка</div>
+                    <div class="catalog_flex-container-3_image-desc-2">1700 руб.</div>
+                </div>
+            </div>
+            <div class="catalog_btn">
+                <!-- добавить ссылку на каталог -->
+                <a href="#" class="catalog_btn_open-catalog" role="button">Открыть каталог</a>
+                <!-- <button class="catalog_btn_open-catalog">Открыть каталог</button> -->
+            </div>
+        </div>
         <div class="about">
             <h1 class="about-title">
                 <a id="about"></a>О Компании
             </h1>
             <div class="about-text">
-                <p>Наш бренд желает помочь всем прекрасным женшинам носить дома комфортную и элегантную одежду.
-                    Мы нашли чудесный российский бренд трикотажной женской одежды, основанный в 2018 году - VERY NEAT.
+                <p>Наш бренд желает помочь всем прекрасным женшинам носить дома комфортную и элегантную
+                    одежду.
+                    Мы нашли чудесный российский бренд трикотажной женской одежды, основанный в 2018 году -
+                    VERY
+                    NEAT.
                 </p>
 
-                <p>Компания разрабатывает коллекции в Петербурге и шьют одежду из полотен собственного производства.
+                <p>Компания разрабатывает коллекции в Петербурге и шьют одежду из полотен собственного
+                    производства.
                     Поэтому
                     могут контролировать процесс пошива изделий и качество их исполнения.
                 </p>
 
-                <p>Одежда лаконичных силуэтов и естественных цветов легко сочетается с другими предметами женского
+                <p>Одежда лаконичных силуэтов и естественных цветов легко сочетается с другими предметами
+                    женского
                     гардероба.
                     Это позволит вам экспериментировать со стилями и одеваться со вкусом.
                 </p>
 
-                <p>Элегантность фасонов, сложные рельефные узоры и необычные принты – то, что отличает продукцию VERY
+                <p>Элегантность фасонов, сложные рельефные узоры и необычные принты – то, что отличает
+                    продукцию
+                    VERY
                     NEAT и
                     делает её узнаваемой.
                 </p>
@@ -43,49 +144,52 @@
         <div class="footer-menu">
             <div class="logo">
                 <a href="#">
-                    <img src="img/logo.png" alt="логотип" class="logo-img">
+                    <img src="assets/image/logo.png" alt="логотип" class="logo-img">
                 </a>
             </div>
-
-            <div class="first-column">
-                <div class="footerline main-page">
-                    <a href="#">Главная</a>
+            <div class="central-footermenu">
+                <div class="first-column">
+                    <div class="footerline main-page">
+                        <a href="#">Главная</a>
+                    </div>
+                    <div class="footerline katalog">
+                        <a href="#">Каталог</a>
+                    </div>
+                    <div class="footerline size">
+                        <a href="#">Размерная сетка</a>
+                    </div>
                 </div>
-                <div class="footerline katalog">
-                    <a href="#">Каталог</a>
-                </div>
-                <div class="footerline size">
-                    <a href="#">Размерная сетка</a>
+                <div class="second-column">
+                    <div class="footerline buy">
+                        <a href="#">Как купить</a>
+                    </div>
+                    <div class="footerline about-comp">
+                        <a href="#about">О компании</a>
+                    </div>
+                    <div class="time">11:00-21:00</div>
                 </div>
             </div>
 
-            <div class="second-column">
-                <div class="footerline buy">
-                    <a href="#">Как купить</a>
-                </div>
-                <div class="footerline about-comp">
-                    <a href="#about">О компании</a>
-                </div>
-                <div class="time">11:00-21:00</div>
-            </div>
         </div>
 
         <div class="footer-menu2">
-            <div class="footer2line">
-                ©Все права защищены
+            <div class="footer2line confident">
+                ©Все права защищены <br>
                 <a href="#">Политика конфиденциальности</a>
                 <a href="#">Публичная оферта</a>
             </div>
             <div class="footer2line">
-                <a href="#">hello@example.ru</a>
-                Подпишись на нас в телеграмм
+                <a href="#">hello@example.ru</a> <br>
                 <a href="#">
+                    Подпишись на нас в телеграмм
                     <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
                 </a>
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.ordering {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Заголовок страницы */
+
+.ordering__title {
+    font-weight: 500;
+    font-size: 1.9em;
+    letter-spacing: 0.02em;
+    padding: 3em 0 2em 0;
+}
+
+/* Формы данных покупателя */
+
+.ordering__details-title {
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+}
+
+.required {
+    color: rgb(243, 83, 83);
+}
+
+.ordering__details {
+    margin-bottom: 2.5em;
+}
+
+.ordering__details-field {
+    display: flex;
+    width: 20.9em;
+    height: 2.5em;
+    padding-left: 0.4em;
+    margin: 0.1em 0 0.9em 0;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    border: 0.08em solid #000;
+    border-radius: 0.3em;
+}
+
+#user-comment {
+    max-width: 21em;
+    min-width: 21em;
+    min-height: 5em;
+    line-height: 1.5em;
+}
+
+/* Форма заказа */
+
+.ordering__details-confirmation {
+    display: grid;
+    grid-template-columns: repeat(2, 10em);
+    grid-template-rows: repeat(5, 2em);
+    margin-top: 0.7em;
+    font-weight: 100;
+}
+
+.ordering__details-total {
+    font-weight: 400;
+}
+
+.ordering__details-item {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+    font-weight: 400;
+}
+
+.ordering__details-cost {
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+    font-weight: 400;
+}
+
+/* Форма выбора способа оплаты */
+
+.ordering__paiment-option {
+    margin-top: 1.5em;
+}
+
+.ordering__payment-button {
+    width: 9em;
+    padding: 0.3em 0.9em 0.3em 0.9em;
+    margin: 1.5em 0 5em 0;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    border: 0.08em solid #000;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.ordering__payment-button:hover {
+    background-color: #ace1af;
+}
+
+/*Стили блока футер*/
+/*div {
+    border: 1px solid red;
+}*/

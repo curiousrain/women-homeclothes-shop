@@ -1,5 +1,5 @@
 body{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*Main*/
@@ -29,6 +29,7 @@ body{
 
 .subtitle-delivery {
     font-size: 1.5625rem;
+    margin-bottom: 1rem;
 }
 
 .content-delivery {
@@ -37,7 +38,9 @@ body{
 
 .content-delivery__items {
     list-style-type: circle;
+    list-style-position: inside;
     line-height: 1.5;
+    padding-left: 1rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -77,8 +80,26 @@ body{
 }
 
 /*Стили блока футер*/
+/*div {
+    border: 1px solid red;
+}*/
 
-@media (max-width: 768px) {
+
+@media (max-width: 769px) {
+    .footer {
+        padding: 50px 10vw 30px 10vw;
+    }
+
+    .logo {
+        margin-right: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .central-footermenu {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-menu {
         display: flex;
         flex-direction: column;
@@ -93,13 +114,32 @@ body{
     }
     }
 
-@media (min-width: 769px) and (max-width: 1099px) {  
+@media (min-width: 770px) and (max-width: 1099px) {  
+    .footer {
+        padding: 50px 6vw 30px 6vw;
+    }
+
+    .logo {
+        margin-right: 20vw;
+        margin-bottom: 20px;
+    }
+
+    .central-footermenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-column {
+        margin-right: 20vw;
+    }
+
     .footer-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        justify-content: start;
+        /*flex-wrap: wrap;*/
         padding-bottom: 30px;
+        padding-right: 4em;
     }
     
     .footer-menu2 {
@@ -111,12 +151,27 @@ body{
     }
 
 @media (min-width: 1100px) {
+    .central-footermenu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-right: 8vw;
+        padding-bottom: 10px;
+    }
+
+    .footer {
+        padding: 50px 6vw 30px 6vw;
+    }
+
     .footer-menu {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        justify-content: start;
+        /*flex-wrap: wrap;*/
         padding-bottom: 30px;
+        
     }
 
     .first-column,
@@ -133,18 +188,17 @@ body{
     }
 
     .time {
-        margin-left: 7vw;
+        margin-left: 8vw;
+        padding-top: 15px;
     }
 
     .main-page,
-    .buy {
-        margin-left: 15px;
-    }
-
+    .buy,
     .katalog,
     .size,
     .about-comp {
-        margin-left: 30px;
+        margin-left: 25px;  
+        padding-top: 15px;
     }   
     }
 
@@ -152,7 +206,6 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #CADABA;
-    padding: 50px 10vw 30px 10vw;
 }
 
 .footerline,
@@ -161,19 +214,27 @@ footer {
 }
 
 .footer2line {
-    max-width: 200px;
+    max-width: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 180%;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    
+}
+
+.confident {
+    margin-bottom: 15px;
 }
 
 .logo-img {
     width: 10em;
 }
 
-.logo {
-    margin-right: 4vw;
-    padding-bottom: 10px;
-}
+
 
 a {
     color: black;
     text-decoration: none;
 }
+

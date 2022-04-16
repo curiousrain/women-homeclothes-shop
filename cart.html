@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/howtobuy.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -41,26 +39,45 @@
         </div>
     </header>
     <main class="container">
-        <div class="delivery-payment">
-            <h1 class="title-delivery">Условия оплаты</h1>
-            <div class="content-delivery">
-                При заказе на сайте обязательно частичная предоплата заказа безналичным способом. Окончательная оплата
-                при получении или в момент доставки.
+        <div class="cart">
+            <h1 class="cart-title">
+                Корзина
+            </h1>
+            <div class="cart-table">
+                <div class="cart-table-names">
+                    <span>Товар</span>
+                    <span>Цена</span>
+                    <span>Количество</span>
+                    <span>Всего</span>
+                </div>
+                <hr>
+                <div class="cart-products">
+                    <div class="cart-product">
+                        <img src="assets/image/delete.svg" alt="delete" class="cart-btn-delete">
+                        <img src="assets/image/index_catalog_1.jpg" alt="Product" class="cart-product-image">
+                        <span class="cart-product-name">Наименование товара</span>
+                    </div>
+                    <div class="cart-product-price">0 руб</div>
+                    <div class="cart-product-quantity">
+                        <button class="cart-plus-btn" type="button" name="button">
+                            <img src="assets/image/plus.svg" alt="plus" class="cart-plus-img" />
+                        </button>
+                        <input type="text" name="name" value="1">
+                        <button class="cart-minus-btn" type="button" name="button">
+                            <img src="assets/image/minus.svg" alt="minus" class="cart-minus-img" />
+                        </button>
+                    </div>
+                    <div class="cart-total-price">0руб</div>
+                </div>
             </div>
-        </div>
-        <div class="delivery-shipping">
-            <h1 class="title-delivery">Условия доставки</h1>
-            <div class="subtitle-delivery">Способы доставки:</div>
-            <ul class="content-delivery">
-                <li class="content-delivery__items">отправка заказа Почтой России (в другие регионы);</li>
-                <li class="content-delivery__items">доставка курьером в пределах Санкт-Петербурга;</li>
-                <li class="content-delivery__items">пункт выдачи в Санкт-Петербурга;</li>
-                <li class="content-delivery__items">выдача заказа через постамат.</li>
-            </ul>
-        </div>
-        <div class="delivery-return">
-            <h1 class="title-delivery">Условия возврата</h1>
-            <div class="content-delivery">Возврат по договорённости в пункт выдачи или Почтой России.</div>
+            <div class="cart-buttons">
+                <div class="cart-total-btn">
+                    <span>Итого:</span>
+                </div>
+                <div class="cart-registration">
+                    <a href="#" class="cart-registration-btn">Оформить заказ</a>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
