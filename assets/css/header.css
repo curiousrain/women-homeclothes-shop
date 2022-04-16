@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+a {
+    color: #560228;
+    text-decoration: none;
 }
 
 .menu__item li a:hover {

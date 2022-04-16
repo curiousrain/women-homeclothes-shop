@@ -4,21 +4,30 @@ body{
 .container{
     width: 80vw;
     margin: 0 auto;
+    box-shadow: 0 1em 2em rgb(0 0 0 / 35%);
 }
 .cart {
-    padding-top:10rem ;
-    padding-bottom: 10rem;
+    padding-top:1rem ;
+    padding-bottom: 1em;
+    margin-left: 1em;
 }
 .cart-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 140%;
     padding-bottom: 5rem;
+    margin-left: 5em;
 }
+.cart-table{
+    margin: 2em;
+}
+
 .cart-table-names {
 display: grid;
 grid-template-columns:40% 20% 20% 20%;
 justify-items: center;
+margin-left: 3em;
+padding-bottom: 1em;
 }
 .cart-products {
     display: grid;
@@ -32,7 +41,7 @@ justify-items: center;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    gap: 1em;
 }
 .cart-btn-delete{
     width: 0.75em;
@@ -79,21 +88,57 @@ justify-items: center;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
-    color: #ffffff;
+    color: #560228 ;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     transition: .3s;
-
 }
 .cart-total-btn{
-    background-color:#CADABA;
+    background-color:#eed9e5;
 }
 .cart-registration-btn{
-background-color:#999950 ;
+background-color: #edc1d9 ;
+color: #560228;
 }
 .cart-registration-btn:hover{
-    background-color: #424632;
+    background-color: #f1bbd9;
     transform: translateY(-2px);
-    color: white;
+    color: #560228;
+}
+/* Корзина планшет */
+@media (min-width: 768px) and (max-width: 1023px){
+    .cart-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+}
+/* Корзина мобильная версия */
+@media (min-width: 0px) and (max-width: 767px){
+    .cart-table-names{
+        display: none;
+    } 
+    .cart-title{
+        text-align: center;
+        padding-bottom: 5rem;
+        margin-left: 0em;
+    }
+    .cart-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cart-total-btn,
+    .cart-registration-btn{
+    margin: 1em 0em;
+    }
+    .cart-products {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        padding-right: 1em;
+    }
 }
 /*Стили блока футер*/
 
