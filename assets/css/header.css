@@ -170,9 +170,9 @@ body {
 
     .header__menu-item {
         display: block;
-        margin-right: 4em;
+        margin-right: 2em;
         text-decoration: none;
-        color: #333;
+        color: #1E5945;
     }
 
     .header__form {
@@ -251,7 +251,7 @@ body {
         display: block;
         margin-bottom: 2em;
         text-decoration: none;
-        color: #333;
+        color: #1E5945;
     }
 
 }
