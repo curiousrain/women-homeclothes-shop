@@ -1,53 +1,35 @@
-body {
+.container-item {
     display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-}
-
-.main {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
+    border: 1px solid sandybrown;
+    padding: 5%;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 90vh;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
 }
 
-h2 {
-    padding: 0%;
-    margin-left: 10vh;
+.foto-item {
+    flex: 1;
+    border: 1px solid sandybrown;
+    justify-self: left
 }
 
-.item-foto {
+.item-discrip {
+    flex: 2;
+    border: 1px solid sandybrown;
     flex-direction: column;
-    height: 70vh;
+    justify-content: space-between;
 }
 
-.item-info {
-    margin-left: 10vh;
-    margin-top: 10vh;
-}
-
-.item-prise {
-    flex-direction: row;
-    flex-shrink: 1;
-    color: #998E78;
-    margin-left: 0%;
-    font-size: 40px;
-    margin-bottom: 5vh;
-}
-
-.item-size {
-    width: 41px;
-    height: 41px;
+.item-price,
+.item-size,
+.item-about,
+.item-buy {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 9px;
+    border: 1px solid seagreen;
+    min-height: 10%;
+    padding: 2%;
+    font-family: Raleway;
 }
 
+<<<<<<< Updated upstream
 .item-size-number {
     display: flex;
     width: 41px;
@@ -81,25 +63,23 @@ h2 {
 
 .item-discription {
     margin-bottom: 20px;
+=======
+.item-size-button {
+    display: inline-block;
+    border: 2px solid black ;
+    background-color: white;
+    height: 5vh;
+    width: 5vh;
+>>>>>>> Stashed changes
 }
 
-.item-basket {
-    display: flex;
-    height: 61px;
-    flex-direction: row;
-    align-items: center;
-}
-
-.item-basket-number {
-    height: 59px;
-    width: 59px;
-    border: 1px solid #AFAFAF;
-    align-self: center;
-}
-
-/*add to basket button*/
-.item-button {
+.button-buy {
+    display: inline-block;
+    border: 2px solid gray;
+    height: 7vh;
+    width: fit-content;
     text-decoration: none;
+<<<<<<< Updated upstream
     display: flex;
     width: 268px;
     height: 61px;
@@ -149,4 +129,11 @@ h2 {
     margin-left:5vh;
     margin-top: 5vh;
 }
+=======
+    color: aliceblue;
+    background-color: #006633;
+}
+.item-buy-form {
+    display: inline-block;
+>>>>>>> Stashed changes
 }
