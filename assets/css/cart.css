@@ -96,160 +96,178 @@ background-color:#999950 ;
     color: white;
 }
 /*Стили блока футер*/
-/*div {
-    border: 1px solid red;
-}*/
-
-
-@media (max-width: 769px) {
-    .footer {
-        padding: 50px 10vw 30px 10vw;
-    }
-
-    .logo {
-        margin-right: 20vw;
-        margin-bottom: 20px;
-    }
-
-    .central-footermenu {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-bottom: 30px;
-    }
-    
-    .footer-menu2 {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    }
-
-@media (min-width: 770px) and (max-width: 1099px) {  
-    .footer {
-        padding: 50px 6vw 30px 6vw;
-    }
-
-    .logo {
-        margin-right: 20vw;
-        margin-bottom: 20px;
-    }
-
-    .central-footermenu {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .first-column {
-        margin-right: 20vw;
-    }
-
-    .footer-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        /*flex-wrap: wrap;*/
-        padding-bottom: 30px;
-        padding-right: 4em;
-    }
-    
-    .footer-menu2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    }
-
-@media (min-width: 1100px) {
-    .central-footermenu {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .logo {
-        margin-right: 8vw;
-        padding-bottom: 10px;
-    }
-
-    .footer {
-        padding: 50px 6vw 30px 6vw;
-    }
-
-    .footer-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        /*flex-wrap: wrap;*/
-        padding-bottom: 30px;
-        
-    }
-
-    .first-column,
-    .second-column {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .footer-menu2 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .time {
-        margin-left: 8vw;
-        padding-top: 15px;
-    }
-
-    .main-page,
-    .buy,
-    .katalog,
-    .size,
-    .about-comp {
-        margin-left: 25px;  
-        padding-top: 15px;
-    }   
-    }
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #CADABA;
-}
-
-.footerline,
-.footer2line {
-    padding-bottom: 20px;
-}
-
-.footer2line {
-    max-width: 220px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 180%;
-    font-size: 13px;
-    letter-spacing: 0.02em;
-    
-}
-
-.confident {
-    margin-bottom: 15px;
-}
-
-.logo-img {
-    width: 10em;
-}
-
-
 
 a {
     color: black;
     text-decoration: none;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.main-page {
+    grid-area: main-page;
+}
+
+.katalog {
+    grid-area: katalog;
+}
+
+.size {
+    grid-area: size;
+}
+
+.buy {
+    grid-area: buy;
+}
+
+.about-comp{
+    grid-area: about-comp;
+}
+
+.time {
+    grid-area: time;
+}
+
+.confident {
+    grid-area: confident;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+@media (max-width: 839px) {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #CADABA;
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-areas: 
+        "logo logo"
+        "main-page buy"
+        "katalog about-comp"
+        "size size"
+        "time time"
+        "mail mail"
+        "confident confident";
+    }    
+
+    .logo {
+        justify-self: center;
+        margin: 25px auto 10px auto;
+    }
+
+    .main-page,
+    .katalog,
+    .size {
+        padding: 10px 0px 10px 10vw;
+    }
+
+    .time {
+        padding: 30px 0px 10px 10vw;
+    }
+
+    .mail {
+        padding: 15px 0px 10px 10vw;
+    }
+
+    .confident {
+        padding: 15px 0px 30px 10vw;
+    }
+
+    .buy,
+    .about-comp {
+        padding: 10px 10vw 10px 0px;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1199px) {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #CADABA;
+        display: grid;
+        grid-template-columns: 38vw 12vw 12vw 38vw;
+        grid-template-areas: 
+        "logo main-page buy time"
+        "logo katalog about-comp mail"
+        "logo size size mail"
+        "confident confident confident confident";
+    }   
+    
+    .logo,
+    .confident {
+        margin-left: 10vw;
+    }
+
+    .logo,
+    .main-page,
+    .buy,
+    .time,
+    .katalog,
+    .about-comp,
+    .mail,
+    .size,
+    .confident {
+        margin-top: 20px;
+    }
+
+    .confident {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1200px) {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #CADABA;
+        display: grid;
+        grid-template-columns: 30vw 9vw 9vw 9vw 9vw 9vw 25vw;
+        grid-template-areas: 
+        "logo main-page katalog size buy about-comp time"
+        "confident confident confident confident confident confident  mail"
+    }   
+
+    .logo,
+    .confident {
+        margin-left: 10vw;
+    }
+
+    .logo,
+    .main-page,
+    .buy,
+    .time,
+    .katalog,
+    .about-comp,
+    .mail,
+    .size,
+    .confident {
+        margin-top: 20px;
+    }
+
+    .confident {
+        margin-bottom: 30px;
+    }
+
+    .main-page,
+    .katalog,
+    .size,
+    .buy,
+    .about-comp,
+    .time {
+        padding-top: 25px;
+    }
 }
