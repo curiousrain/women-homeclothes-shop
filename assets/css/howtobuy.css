@@ -205,7 +205,7 @@ body{
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #CADABA;
+    background-color: #f0d5e4;
 }
 
 .footerline,

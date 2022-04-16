@@ -1,10 +1,24 @@
 body{
     font-family: 'Roboto', sans-serif;
+    background: url(/assets/image/back_image/pink-alcohol-ink-background-abstract-fluid-art-painting-design/18449077.jpg); /* Цвет фона и путь к файлу */
+    background-size: cover;
+    
 }
+
+body {
+    color: #fff; /* Цвет текста */
+   }
+
 .container{
     width: 80vw;
     margin: 0 auto;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
+    
 }
+.container2{
+    
+}
+
 /*блок лукбук*/
 #slider{
     position: relative;
@@ -118,17 +132,17 @@ label,a{
     gap: 1em;
     width: 80vw;
     justify-content: space-between;
-    /* height: 27em; */
+    padding: 1em;
+    margin-top: 1em;
 }
 .catalog_title{
     font-weight: 400;
     line-height: 140%;
-    color: #2F4538;
-    font-family: 'Roboto', sans-serif
-    /* откорректировать цвета  */
+    color: #560228;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2em;
 }
 .catalog_flex-container-1_image{
-    /* Высоту картинок сделать одинакой с высотой лукбука (скоректировать height у .catalog_flex-container) */
     max-width: 100%;
     max-height: 100%;
 }
@@ -138,22 +152,20 @@ label,a{
     margin: 3em;
 }
 .catalog_btn_open-catalog{
-    /* откорректировать цвета  */
-    /* background-color: #CADABA; */
     text-decoration: none;
-    background-color: #dcf1c5;
-    color: #2F4538;
-    border: 1px solid #2F4538;
+    background-color: #eed9e5;
+    color: #560228;
+    border: 1px solid #560228;
     font-size: 1em;
     padding: 1em 2em 1em 2em;
 }
 .catalog_btn_open-catalog:hover{
     vertical-align: middle;
-    background-color: #d1f1af;
+    background-color: #edc1d9;
 }
 .catalog_btn_open-catalog:active{
     vertical-align: middle;
-    background-color: #bbe391;
+    background-color: #f1bbd9;
     color: black;
 }
 .catalog_flex-container-1_image-desc-1,
@@ -208,6 +220,8 @@ label,a{
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.02em;
+    margin-left: 2em;
+    color: #560228 ;
 }
 
 .about-text {
@@ -340,7 +354,7 @@ label,a{
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #CADABA;
+    background-color: #f0d5e4;
 }
 
 .footerline,
