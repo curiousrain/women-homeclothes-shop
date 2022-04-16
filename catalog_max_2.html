@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/catalog_max_copy.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="header__container">
+                <a href="./index.html">
+                    <img class="header__container_logo" src="assets/image/header/logo.png" alt="Logotype" />
+                </a>
+                <nav class="header__menu">
+                    <input id="checkbox__toggle" type="checkbox" />
+                    <label class="hamburger" for="checkbox__toggle"><span class="hamburger-line"></span></label>
+                    <ul class="menu__item">
+                        <li><a href="./index.html" class="header__menu-item">Главная</a></li>
+                        <li><a href="#" class="header__menu-item">Каталог</a></li>
+                        <li><a href="#" class="header__menu-item">Размеры</a></li>
+                        <li><a href="./howtobuy.html" class="header__menu-item">Как&nbsp;купить</a></li>
+                        <li><a href="#" class="header__menu-item">О&nbsp;нас</a></li>
+                        <li><a href="#" class="header__menu-item">Контакты</a></li>
+                    </ul>
+                </nav>
+                <form class="header__form">
+                    <input class="header__input" type="text" placeholder="Найти товар...">
+                    <button class="header__button" type="submit"></button>
+                    <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </form>
+            </div>
+        </header>
+    </main>
+    <main class="catalog_container">
+        <div class="filter-section">
+            <h2 class="products_title">Каталог</h2>
+            <div class="filter_top_item">
+                <br>
+                <ul>
+                    <li>
+                        <a href="#" class="sort_price">Стоимость</a>
+                        <div class="slidecontainer">
+                            <input type="range" min="0" max="50000" value="50" class="slider" id="myRange">
+                            <p><span id="demo" style="color: #560228; font-size: 125%;"></span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sort_collection">Коллекция</a>
+                        <select>
+                            <option value="1">Весна-лето 22</option>
+                            <option value="2">Домашняя коллекция весна-лето 22</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#" class="sort_material">Материал</a>
+                        <select>
+                            <option value="1">хлопок</option>
+                            <option value="2">спандекс</option>
+                            <option value="3">полиэстер</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#" class="sort_size">Размер</a>
+                        <select>
+                            <option value="1">XS 84/164-170</option>
+                            <option value="2">S 88/164-170</option>
+                            <option value="3">M 92/164-170</option>
+                            <option value="5">L 96/164-170</option>
+                            <option value="6">XL 100/164-170</option>
+                            <option value="7">2XL 104/164-170</option>
+                            <option value="8">3XL 108/164-170</option>
+                            <option value="9">4XL 112/164-170</option>
+                            <option value="8">5XL 116/164-170</option>
+                            <option value="9">6XL 120/164-170</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#" class="sort_size">Категория</a>
+                        <select>
+                            <option value="1">Убыванию цены</option>
+                            <option value="2">Возрастанию цены</option>
+                            <option value="3">Скидкам</option>
+                            <option value="4">Новинкам</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="page_products">
+                <div class="products_flex-container">
+                    <div class="products_items_1">
+                        <img class="item-product_1" src="assets/image/catalog_max/7.jpg" alt="">
+                        <div class="item-product_1_title_1">Футболка </div>
+                        <div class="item-product_1_descrip1">супрем </div>
+                        <div class="item-product_1_descrip2">100% хлопок</div>
+                        <div class="item-product_1_price_1">0 руб</div>
+                        <button class="product_btn_1" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_2">
+                        <img class="item-product_2" src="assets/image/catalog_max/8.jpg" alt="">
+                        <div class="item-product_2_title_2">Футболка</div>
+                        <div class="item-product_2_descrip1">супрем</div>
+                        <div class="item-product_2_descrip2">100% хлопок </div>
+                        <div class="item-product_2_price_2">0 руб</div>
+                        <button class="product_btn_2" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_3">
+                        <img class="item-product_3" src="assets/image/catalog_max/9.jpg" alt="">
+                        <div class="item-product_3_title_3">Сорочка</div>
+                        <div class="item-product_3_descrip1">супрем</div>
+                        <div class="item-product_3_descrip2">100% хлопок </div>
+                        <div class="item-product_3_price_3">0 руб</div>
+                        <button class="product_btn_3" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_4">
+                        <img class="item-product_4" src="assets/image/catalog_max/10.jpg" alt="">
+                        <div class="item-product_4_title_4">Платье</div>
+                        <div class="item-product_4_descrip1">футер двухнитка</div>
+                        <div class="item-product_4_descrip2">100% хлопок</div>
+                        <div class="item-product_4_price_4">0 руб</div>
+                        <button class="product_btn_4" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_5">
+                        <img class="item-product_5" src="assets/image/catalog_max/11.jpg" alt="">
+                        <div class="item-product_5_title_5">Брюки</div>
+                        <div class="item-product_5_descrip1">футер двухнитка</div>
+                        <div class="item-product_5_descrip2">100% хлопок</div>
+                        <div class="item-product_5_price_5">0 руб</div>
+                        <button class="product_btn_5" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_6">
+                        <img class="item-product_6" src="assets/image/catalog_max/12.jpg" alt="">
+                        <div class="item-product_6_title_6">Халат</div>
+                        <div class="item-product_3_descrip1">супрем</div>
+                        <div class="item-product_3_descrip2">100% хлопок</div>
+                        <div class="item-product_6_price_6">0 руб</div>
+                        <button class="product_btn_6" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_7">
+                        <img class="item-product_7" src="assets/image/catalog_max/16.jpg" alt="">
+                        <div class="item-product_7_title_7">Брюки</div>
+                        <div class="item-product_7_descrip1">футер двухнитка</div>
+                        <div class="item-product_7_descrip2">100% хлопок</div>
+                        <div class="item-product_7_price_7">0 руб</div>
+                        <button class="product_btn_7" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_8">
+                        <img class="item-product_8" src="assets/image/catalog_max/17.jpg" alt="">
+                        <div class="item-product_8_title_8">Тостовка</div>
+                        <div class="item-product_8_descrip1">футер петля трехнитка</div>
+                        <div class="item-product_8_descrip2">80% хлопок, 20% полиэстер</div>
+                        <div class="item-product_8_price_8">0 руб</div>
+                        <button class="product_btn_8" type="button">Купить</button>
+                    </div>
+                    <div class="products_items_9">
+                        <img class="item-product_9" src="assets/image/catalog_max/18.jpg" alt="">
+                        <div class="item-product_9_title_9">Джемпер</div>
+                        <div class="item-product_9_descrip1">футер петля</div>
+                        <div class="item-product_9_descrip2">100% хлопок</div>
+                        <div class="item-product_9_price_9">0 руб</div>
+                        <button class="product_btn_9" type="button">Купить</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a class="btn" href="catalog_max.html"><img src="assets/image/catalog_max/arrowLeft.svg"
+                                alt="ArrowLeft"><span>Предыдущая страница</span></a>
+                        <a class="btn" href="catalog_max_2.html"><span>Следующая страница</span><img
+                                src="assets/image/catalog_max/arrowRight.svg" alt="ArrowRight"></a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">
+            <a href="#"><img src="assets/image/logo.png" alt="логотип" class="logo-img"></a>
+        </div>
+        <div class="main-page"><a href="#">Главная</a></div>
+        <div class="katalog"><a href="#">Каталог</a></div>
+        <div class="size"><a href="#">Размерная сетка</a></div>
+        <div class="buy"><a href="#">Как купить</a></div>
+        <div class="about-comp"><a href="#about">О компании</a></div>
+        <div class="time">11:00-21:00</div>
+        <div class="confident">
+            ©Все права защищены <br>
+            <a href="#">Политика конфиденциальности</a><br>
+            <a href="#">Публичная оферта</a>
+        </div>
+        <div class="mail">
+            <a href="#">hello@example.ru</a> <br>
+            <a href="#">
+                Подпишись на нас в телеграмм
+                <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
+            </a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
+    <script src="assets/js/catalog1.js">
+    </script>
+</body>
+
+</html>
