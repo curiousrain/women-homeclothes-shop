@@ -57,14 +57,14 @@ header {
     text-align: center;
 }
 
-form {
+.header__form {
     position: relative;
     min-width: 10vw;
     margin: 1% 1% 0 5%;
     height: 2.62em;
 }
 
-input {
+.header__input {
     height: 2.62em;
     width: 0;
     padding: 0 2.62em 0 0.93em;
@@ -79,13 +79,13 @@ input {
     z-index: 2;
 }
 
-input:focus {
+.header__input:focus {
     width: 12em;
     z-index: 1;
     border-bottom: 2px solid #fff;
 }
 
-button {
+.header__button {
     background: none;
     border: none;
     height: 2.5em;
@@ -96,23 +96,18 @@ button {
     cursor: pointer;
 }
 
-button:before {
+.header__button:before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 1.5em;
     color: #fff;
 }
 
-.fa-shopping-cart,
-.fa-heart-o {
+.fa-shopping-cart {
     padding-top: 2%;
     margin-bottom: 2.1%;
     color: #fff;
     font-size: 1.5em;
-}
-
-.fa-heart-o {
-    padding-left: 25%;
 }
 
 ::placeholder {
@@ -154,13 +149,10 @@ button:before {
         grid-row: 1/2;
     }
 
-    .form {
+    .header__form {
         grid-column: 9/11;
         grid-row: 2/3;
         align-self: flex-start;
-    }
-
-    .form {
         margin-top: -0.4em;
     }
 
@@ -170,14 +162,6 @@ button:before {
         font-size: large;
         align-self: flex-start;
         justify-self: flex-end;
-    }
-
-    .fa-heart-o {
-        grid-column: 11/12;
-        grid-row: 2/3;
-        font-size: large;
-        align-self: flex-start;
-        justify-self: flex-start;
     }
 }
 
@@ -281,7 +265,7 @@ button:before {
         overflow: hidden;
     }
 
-    form {
+    .header__form {
         min-width: 100px;
         margin: 6% 0 4% 20%;
         height: 42px;
