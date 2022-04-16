@@ -1,70 +1,67 @@
-body {
-    /*display: flex;
-    flex-flow: column;*/
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+.container-item {
+        display: flex;
+  
+        padding: 5%;
+        justify-content: center;
+        width: 80vw;
+        margin: 0 auto;
+    }
+h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem; 
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 7vh; 
+}
+.foto-item {
+    flex: 1;
+   
+    justify-self: right;
+}
+.item-discrip {
+    flex: 2;
+   
+    justify-self: left;
+    align-content: center;
+    padding-top: 20vh;
+    padding-left: 2vh;
 }
 
-
-
-
-.main {
-    /*flex: 1;
+.item-price,
+.item-size,
+.item-about,
+.item-buy {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 10%;
-    height: 90vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;*/
-    width: 80vw;
-    margin: 0 auto;
-    min-height: 73vh;
+    min-height: 10%;
+    padding: 2%;
+    font-family: 'Raleway', sans-serif;
 }
 
-.item-prise {
+.item-price  {
     font-size: 2em;
-    color: #998E78;
+    color: #21421E;
     padding-bottom: 10px;
-    /*flex-shrink: 1;*/
-    /*
-    margin-left: 0%;
-    
-    margin-bottom: 5vh;
-    margin-top: 2vh;*/
+    padding-top: 2vh;
 }
 
-.item-info {
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-}
 
-.item-size {
-    width: 41px;
-    height: 41px;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 25px;
+.item-sizes {
+padding-left: 2%;
+display: flex;
 }
-
-.item-size-number {
-    display: flex;
-    width: 41px;
-    height: 41px;
-    margin-right: 14px; 
-}
-
 /*size button*/
 .item-size-number-button {
-    width: 41px;
-    /*height: 41px;*/
+    flex-direction: column;
+    width: 10vh;
+    height: 10vh;
+margin-right: 3%;
+text-align: center;
+padding-top: 3%;
     border: 1px solid black;
     text-align: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -73,7 +70,7 @@ body {
     color: #000000;
     background: #ffffff;
     transition: .3s;
-    padding-top: 8px;
+
     
 }
 
@@ -101,6 +98,7 @@ body {
     align-self: center;
     text-align: center;
     font-size: 20px;
+   
 }
 
 /*add to basket button*/
@@ -108,54 +106,55 @@ body {
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-    /*width: 15vw;*/
     height: 61px;
     left: 79px;
     top: 0px;
     padding-left: 3%;
+    padding: 3%;
     text-align: center;
     flex-direction: row;
     align-items: center;
-    /*margin: 20px;*/
+   
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 400;
     color: #ffffff;
-    background: #998E78;
+    background: #21421E;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     transition: .3s;
+    padding-left: 5vh;
 }
 
 .item-button:hover {
-    background: #8e7f61;
-    box-shadow: 0 15px 20px #998E78 (46, 229, 157, .4);
+    background: #21421E;
+    box-shadow: 0 15px 20px #21421E (46, 229, 157, .4);
     color: white;
     transform: translateY (-2px);
 }
 
 @media (max-width: 769px) {
-    .foto {
+    .foto-item{
         width: 70vw;
         margin-bottom: 30px;
         
     }
-    .item-content {
+    .container-item {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
 }
 
 @media (min-width: 770px) and (max-width: 1099px) {
-    .foto {
+    .foto-item{
         width: 35vw;
         margin-bottom: 40px;
 
     }
-    .item-content {
+    .container-item {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -164,23 +163,7 @@ body {
     .item-info {
         margin-left: 35px;
     }
-}
 
-@media (min-width: 1100px) {
-    .foto {
-        width: 40vw;
-        margin-bottom: 40px;
-    }
-    .item-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .item-info {
-        margin-left: 35px;
-    }
-}
 
 /*@media (max-width: 768px){
    .main {
