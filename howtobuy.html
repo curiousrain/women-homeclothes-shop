@@ -15,32 +15,31 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container-header header__container">
-            <div class="menu-burger__header">
-                <span></span>
-            </div>
-            <div class="header__logo">
-                <img src="assets/image/header/2386.png" alt="" id="logo">
-            </div>
-            <nav class="header__nav">
-                <ul class="menu header__menu">
-                    <li><a href="./index.html" class="menu__item menu__item_border">Главная</a></li>
-                    <li><a href="" class="menu__item">Каталог</a></li>
-                    <li><a href="" class="menu__item">О компании</a></li>
-                    <li><a href="./howtobuy.html" class="menu__item">Как купить</a></li>
-                    <li><a href="" class="menu__item">Размерная сетка</a></li>
-                    <li><a href="" class="menu__item">Контакты</a></li>
-                </ul>
-            </nav>
-            <form class="header__form">
-                <input class="header__input" type="text" placeholder="Найти товар...">
-                <button class="header__button" type="submit"></button>
-            </form>
-            <a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        </div>
-    </header>
     <main class="container">
+        <header class="header">
+            <div class="header__container">
+                <a href="./index.html">
+                    <img class="header__container_logo" src="assets/image/header/logo.png" alt="Logotype" />
+                </a>
+                <nav class="header__menu">
+                    <input id="checkbox__toggle" type="checkbox" />
+                    <label class="hamburger" for="checkbox__toggle"><span class="hamburger-line"></span></label>
+                    <ul class="menu__item">
+                        <li><a href="./index.html" class="header__menu-item">Главная</a></li>
+                        <li><a href="#" class="header__menu-item">Каталог</a></li>
+                        <li><a href="#" class="header__menu-item">Размеры</a></li>
+                        <li><a href="#" class="header__menu-item">Как&nbsp;купить</a></li>
+                        <li><a href="#" class="header__menu-item">О&nbsp;нас</a></li>
+                        <li><a href="#" class="header__menu-item">Контакты</a></li>
+                    </ul>
+                </nav>
+                <form class="header__form">
+                    <input class="header__input" type="text" placeholder="Найти товар...">
+                    <button class="header__button" type="submit"></button>
+                    <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                </form>
+            </div>
+        </header>
         <div class="delivery-payment">
             <h1 class="title-delivery">Условия оплаты</h1>
             <div class="content-delivery">
