@@ -1,12 +1,12 @@
 .container-item {
         display: flex;
-  
         padding: 5%;
         justify-content: center;
         width: 80vw;
         margin: 0 auto;
     }
 h3{
+    
     font-style: normal;
     font-weight: 500;
     font-size: 3rem; 
@@ -15,7 +15,7 @@ h3{
 }
 .foto-item {
     flex: 1;
-   
+   padding-top: 2vh;
     justify-self: right;
 }
 .item-discrip {
@@ -52,8 +52,9 @@ display: flex;
 /*size button*/
 .item-size-number-button {
     flex-direction: column;
-    width: 10vh;
-    height: 10vh;
+    width: 5vw;
+    height: 5vh;
+   
 margin-right: 3%;
 text-align: center;
 padding-top: 3%;
@@ -106,8 +107,9 @@ padding-top: 3%;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-    height: 61px;
-    left: 79px;
+    height: 5vh;
+width: fit-content;
+  
     top: 0px;
     padding-left: 3%;
     padding: 3%;
@@ -124,7 +126,7 @@ padding-top: 3%;
     background: #21421E;
     box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     transition: .3s;
-    padding-left: 5vh;
+   
 }
 
 .item-button:hover {
@@ -132,234 +134,4 @@ padding-top: 3%;
     box-shadow: 0 15px 20px #21421E (46, 229, 157, .4);
     color: white;
     transform: translateY (-2px);
-}
-
-@media (max-width: 769px) {
-    .foto-item{
-        width: 70vw;
-        margin-bottom: 30px;
-        
-    }
-    .container-item {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-}
-
-@media (min-width: 770px) and (max-width: 1099px) {
-    .foto-item{
-        width: 35vw;
-        margin-bottom: 40px;
-
-    }
-    .container-item {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .item-info {
-        margin-left: 35px;
-    }
-
-
-/*@media (max-width: 768px){
-   .main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 90vh;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-} 
-.item-foto {
-    flex-direction: column;
-    height: 20vh;
-}
-.item-info {
-    margin-left:5vh;
-    margin-top: 5vh;
-}
-}*/
-
-/*Стили блока футер*/
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-.logo {
-    grid-area: logo;
-}
-
-.main-page {
-    grid-area: main-page;
-}
-
-.katalog {
-    grid-area: katalog;
-}
-
-.size {
-    grid-area: size;
-}
-
-.buy {
-    grid-area: buy;
-}
-
-.about-comp{
-    grid-area: about-comp;
-}
-
-.time {
-    grid-area: time;
-}
-
-.confident {
-    grid-area: confident;
-}
-
-.mail {
-    grid-area: mail;
-}
-
-@media (max-width: 839px) {
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .footer {
-        background-color: #CADABA;
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        grid-template-areas: 
-        "logo logo"
-        "main-page buy"
-        "katalog about-comp"
-        "size size"
-        "time time"
-        "mail mail"
-        "confident confident";
-    }    
-
-    .logo {
-        justify-self: center;
-        margin: 25px auto 10px auto;
-    }
-
-    .main-page,
-    .katalog,
-    .size {
-        padding: 10px 0px 10px 10vw;
-    }
-
-    .time {
-        padding: 30px 0px 10px 10vw;
-    }
-
-    .mail {
-        padding: 15px 0px 10px 10vw;
-    }
-
-    .confident {
-        padding: 15px 0px 30px 10vw;
-    }
-
-    .buy,
-    .about-comp {
-        padding: 10px 10vw 10px 0px;
-    }
-}
-
-@media (min-width: 840px) and (max-width: 1199px) {
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .footer {
-        background-color: #CADABA;
-        display: grid;
-        grid-template-columns: 38vw 12vw 12vw 38vw;
-        grid-template-areas: 
-        "logo main-page buy time"
-        "logo katalog about-comp mail"
-        "logo size size mail"
-        "confident confident confident confident";
-    }   
-    
-    .logo,
-    .confident {
-        margin-left: 10vw;
-    }
-
-    .logo,
-    .main-page,
-    .buy,
-    .time,
-    .katalog,
-    .about-comp,
-    .mail,
-    .size,
-    .confident {
-        margin-top: 20px;
-    }
-
-    .confident {
-        margin-bottom: 25px;
-    }
-}
-
-@media (min-width: 1200px) {
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .footer {
-        background-color: #CADABA;
-        display: grid;
-        grid-template-columns: 30vw 9vw 9vw 9vw 9vw 9vw 25vw;
-        grid-template-areas: 
-        "logo main-page katalog size buy about-comp time"
-        "confident confident confident confident confident confident  mail"
-    }   
-
-    .logo,
-    .confident {
-        margin-left: 10vw;
-    }
-
-    .logo,
-    .main-page,
-    .buy,
-    .time,
-    .katalog,
-    .about-comp,
-    .mail,
-    .size,
-    .confident {
-        margin-top: 20px;
-    }
-
-    .confident {
-        margin-bottom: 30px;
-    }
-
-    .main-page,
-    .katalog,
-    .size,
-    .buy,
-    .about-comp,
-    .time {
-        padding-top: 25px;
-    }
 }
