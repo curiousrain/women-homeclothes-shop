@@ -1,15 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 body {
     background-color: #fff;
 }
 
+/* Главный контейнер */
+
 .ordering {
-    max-width: 90vw;
-    max-height: 90vh;
+    width: 80vw;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -21,18 +23,26 @@ body {
     font-size: 1.9em;
     letter-spacing: 0.02em;
     padding: 3em 0 2em 0;
+    text-align: center;
 }
 
-/* Формы данных покупателя */
+/* Форма данных покупателя */
+
+.ordering__details {
+    display: flex;
+    flex-direction: column;
+}
 
 .ordering__details-title {
     font-weight: 400;
     font-size: 1em;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .required {
-    color: rgb(243, 83, 83);
+    color: red;
 }
 
 .ordering__details {
@@ -41,30 +51,43 @@ body {
 
 .ordering__details-field {
     display: flex;
-    width: 20.9em;
     height: 2.5em;
     padding-left: 0.4em;
-    margin: 0.1em 0 0.9em 0;
+    margin: 0.1em 0 1em 0;
     letter-spacing: 0.02em;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     border: 0.08em solid #000;
     border-radius: 0.3em;
+    transition: all 0.5s ease 0s;
 }
 
-#user-comment {
-    max-width: 21em;
-    min-width: 21em;
+.ordering__details-field:focus {
+    box-shadow: 0 0 0.2em #000;
+}
+
+textarea.ordering__details-field {
     min-height: 5em;
     line-height: 1.5em;
+    resize: vertical;
 }
 
-/* Форма заказа */
+/* Форма подтверждения заказа, дублирующаяся из корзины */
+
+.ordering__details-order-title {
+    grid-row: 1 / 1;
+    grid-column: 2/ 2;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
 
 .ordering__details-confirmation {
     display: grid;
-    grid-template-columns: repeat(2, 10em);
-    grid-template-rows: repeat(5, 2em);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 2em);
     margin-top: 0.7em;
     font-weight: 100;
 }
@@ -85,29 +108,162 @@ body {
     font-weight: 400;
 }
 
-/* Форма выбора способа оплаты */
-
-.ordering__paiment-option {
-    margin-top: 1.5em;
+.ordering__details-right {
+    justify-self: right;
 }
 
-.ordering__payment-button {
-    width: 9em;
-    padding: 0.3em 0.9em 0.3em 0.9em;
-    margin: 1.5em 0 5em 0;
+/* Согласие на обработку персональных данных с включенной по умолчанию галочкой */
+
+.ordering__details-agreement {
+    margin-top: 2em;
+}
+
+.ordering__agreement-label {
+    font-size: 0.9em;
+}
+
+.ordering__agreement-label a {
+    color: red;
+}
+
+/* Кнопка */
+
+.ordering__button {
+    position: relative;
+    margin: 1.5em 0 3em 0;
+    width: 100%;
+    height: 2.5em;
+    font-weight: 500;
+    font-size: 1em;
     letter-spacing: 0.02em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    border: 0.08em solid #000;
+    background-color: red;
+    color: #000;
     border-radius: 0.3em;
     cursor: pointer;
+    transition: background-color 0.5s ease 0s;
+    top: 0;
 }
 
-.ordering__payment-button:hover {
-    background-color: #ace1af;
+.ordering__button:hover {
+    background-color: crimson;
 }
 
-/*Стили блока футер*/
-/*div {
-    border: 1px solid red;
-}*/
+.ordering__button:active {
+    top: 3px;
+}
+
+/* Адаптация под планшеты */
+/* Главный контейнер */
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .ordering {
+        width: 80vw;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Заголовок страницы */
+
+    .ordering__title {
+        font-weight: 500;
+        font-size: 1.5em;
+        letter-spacing: 0.02em;
+        padding: 3em 0 2em 0;
+        text-align: center;
+    }
+
+    /* Контейнер без заголовка */
+
+    .ordering__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    /* Форма данных покупателя */
+
+    .ordering__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ordering__details-title {
+        width: 35vw;
+        margin: 0.3em 0 0.3em 0;
+        font-weight: 400;
+        font-size: 1em;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+
+    .required {
+        color: rgb(243, 83, 83);
+    }
+
+    .ordering__details {
+        margin-bottom: 2.5em;
+    }
+
+    .ordering__details-field {
+        display: flex;
+        width: 35vw;
+        height: 3em;
+        padding-left: 0.4em;
+        margin: 0.1em 0 0.9em 0;
+        letter-spacing: 0.02em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.8em;
+        border: 0.08em solid #000;
+        border-radius: 0.3em;
+    }
+
+    textarea.ordering__details-field {
+        min-height: 5em;
+        line-height: 1.5em;
+        resize: vertical;
+    }
+
+    /* Форма подтверждения заказа, дублирующаяся из корзины */
+
+    .ordering__details-confirmation {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 2em);
+        margin-top: 0.7em;
+        font-weight: 100;
+    }
+
+    .ordering__details-total {
+        font-weight: 400;
+    }
+
+    .ordering__details-item {
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+        font-weight: 400;
+    }
+
+    .ordering__details-cost {
+        grid-row: 1 / 1;
+        grid-column: 2 / 2;
+        font-weight: 400;
+    }
+
+    .ordering__details-right {
+        justify-self: right;
+    }
+  
+    /* Согласие на обработку персональных данных с включенной по умолчанию галочкой */
+
+    /* Кнопка */
+
+}
+
+/* Адаптация под экраны */
+/* Главный контейнер */
+
