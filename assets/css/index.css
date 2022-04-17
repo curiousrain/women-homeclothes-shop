@@ -1,12 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
+    /* 
     background: url(/assets/image/back_image/pink-alcohol-ink-background-abstract-fluid-art-painting-design/18449077.jpg);
-    /* Цвет фона и путь к файлу */
+    Цвет фона и путь к файлу 
     background-size: cover;
-
-}
-
-body {
+    */
     color: #560228;
     /* Цвет текста */
 }
@@ -14,13 +12,9 @@ body {
 .container {
     width: 80vw;
     margin: 0 auto;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 35%);
-
 }
 
-.container2 {}
-
-/*блок лукбук*/
+/* блок ЛУКБУК */
 
 #lookbook-image {
     position: relative;
@@ -44,7 +38,6 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     padding: 10px;
-
 }
 
 .slider__items {
@@ -149,6 +142,7 @@ body {
 }
 
 /* Индикаторы */
+
 .slider__indicators {
     position: absolute;
     left: 0;
@@ -179,298 +173,119 @@ body {
     background-color: #fff;
 }
 
-/* блок_lookbook_Мобильная версия */
+/* блок ЛУКБУК - адаптация для мобильных устройств */
+
 @media (min-width: 0px) and (max-width: 767px) {
     .slider {
         display: none;
     }
+}
 
-    /*блок_Каталог_Начало */
-    .catalog_flex-container {
-        display: inline-flex;
-        gap: 1em;
-        width: 80vw;
-        justify-content: space-between;
-        margin-top: 1em;
-    }
+/* блок КАТАЛОГ */
 
-    .catalog_title {
-        font-weight: 400;
-        line-height: 140%;
-        color: #560228;
-        font-family: 'Roboto', sans-serif;
-        margin-left: 2em;
-    }
+.catalog_flex-container {
+    display: inline-flex;
+    gap: 1em;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 1em;
+}
 
-    .catalog_flex-container-1_image {
-        max-width: 100%;
-        max-height: 100%;
+.catalog_title {
+    font-weight: 400;
+    line-height: 140%;
+    color: #560228;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2em;
+}
+
+.catalog_flex-container-1_image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.catalog_btn {
+    position: relative;
+    text-align: center;
+    margin: 3em;
+}
+
+.catalog_btn_open-catalog {
+    text-decoration: none;
+    background-color: #eed9e5;
+    color: #560228;
+    border: 1px solid #560228;
+    font-size: 1em;
+    padding: 1em 2em 1em 2em;
+}
+
+.catalog_btn_open-catalog:hover {
+    vertical-align: middle;
+    background-color: #edc1d9;
+}
+
+.catalog_btn_open-catalog:active {
+    vertical-align: middle;
+    background-color: #f1bbd9;
+    color: black;
+}
+
+.catalog_flex-container-1_image-desc-1,
+.catalog_flex-container-1_image-desc-2,
+.catalog_flex-container-2_image-desc-1,
+.catalog_flex-container-2_image-desc-2,
+.catalog_flex-container-3_image-desc-1,
+.catalog_flex-container-3_image-desc-2 {
+    position: relative;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.catalog_flex-container-1_image-desc-1,
+.catalog_flex-container-2_image-desc-1,
+.catalog_flex-container-3_image-desc-1 {
+    color: #2F4538;
+    height: 1.5em;
+}
+
+.catalog_flex-container-1_image-desc-2,
+.catalog_flex-container-2_image-desc-2,
+.catalog_flex-container-3_image-desc-2 {
+    color: #2F4538;
+    opacity: .3;
+}
+
+/* блок КАТАЛОГ - адаптация для мобильных устройств */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .catalog_flex-container-2 {
+        display: none;
     }
 
     .catalog_btn {
-        position: relative;
-        text-align: center;
         margin: 3em;
     }
 
-    .catalog_btn_open-catalog {
-        text-decoration: none;
-        background-color: #eed9e5;
-        color: #560228;
-        border: 1px solid #560228;
-        font-size: 1em;
-        padding: 1em 2em 1em 2em;
+    .catalog_flex-container {
+        display: inline-flex;
+        width: 80vw;
+        justify-content: center;
     }
+}
 
-    .catalog_btn_open-catalog:hover {
-        vertical-align: middle;
-        background-color: #edc1d9;
-    }
+/* блок О НАС */
 
-    .catalog_btn_open-catalog:active {
-        vertical-align: middle;
-        background-color: #f1bbd9;
-        color: black;
-    }
+.about-text,
+.about-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    margin-left: 2em;
+    color: #560228;
+}
 
-    .catalog_flex-container-1_image-desc-1,
-    .catalog_flex-container-1_image-desc-2,
-    .catalog_flex-container-2_image-desc-1,
-    .catalog_flex-container-2_image-desc-2,
-    .catalog_flex-container-3_image-desc-1,
-    .catalog_flex-container-3_image-desc-2 {
-        position: relative;
-        text-align: center;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-    }
-
-    .catalog_flex-container-1_image-desc-1,
-    .catalog_flex-container-2_image-desc-1,
-    .catalog_flex-container-3_image-desc-1 {
-        color: #2F4538;
-        height: 1.5em;
-    }
-
-    .catalog_flex-container-1_image-desc-2,
-    .catalog_flex-container-2_image-desc-2,
-    .catalog_flex-container-3_image-desc-2 {
-        color: #2F4538;
-        opacity: .3;
-    }
-
-    /* блок_Каталог_Мобильная версия */
-    @media (min-width: 0px) and (max-width: 767px) {
-        .catalog_flex-container-2 {
-            display: none;
-        }
-
-        .catalog_btn {
-            margin: 3em;
-        }
-
-        .catalog_flex-container {
-            display: inline-flex;
-            width: 80vw;
-            justify-content: center;
-        }
-    }
-
-    /* Каталог_Конец*/
-
-    /*Стили блока о компании*/
-
-    .about {
-        /*min-height: 80vh;*/
-    }
-
-    .about-text,
-    .about-title {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        line-height: 140%;
-        letter-spacing: 0.02em;
-        margin-left: 2em;
-        color: #560228;
-    }
-
-    .about-text {
-        padding-bottom: 70px;
-    }
-
-    /*Стили блока футер*/
-
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .logo {
-        grid-area: logo;
-    }
-
-    .main-page {
-        grid-area: main-page;
-    }
-
-    .katalog {
-        grid-area: katalog;
-    }
-
-    .size {
-        grid-area: size;
-    }
-
-    .buy {
-        grid-area: buy;
-    }
-
-    .about-comp {
-        grid-area: about-comp;
-    }
-
-    .time {
-        grid-area: time;
-    }
-
-    .confident {
-        grid-area: confident;
-    }
-
-    .mail {
-        grid-area: mail;
-    }
-
-    @media (max-width: 839px) {
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .footer {
-            background-color: #CADABA;
-            display: grid;
-            grid-template-columns: 50vw 50vw;
-            grid-template-areas:
-                "logo logo"
-                "main-page buy"
-                "katalog about-comp"
-                "size size"
-                "time time"
-                "mail mail"
-                "confident confident";
-        }
-
-        .logo {
-            justify-self: center;
-            margin: 25px auto 10px auto;
-        }
-
-        .main-page,
-        .katalog,
-        .size {
-            padding: 10px 0px 10px 10vw;
-        }
-
-        .time {
-            padding: 30px 0px 10px 10vw;
-        }
-
-        .mail {
-            padding: 15px 0px 10px 10vw;
-        }
-
-        .confident {
-            padding: 15px 0px 30px 10vw;
-        }
-
-        .buy,
-        .about-comp {
-            padding: 10px 10vw 10px 0px;
-        }
-    }
-
-    @media (min-width: 840px) and (max-width: 1199px) {
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .footer {
-            background-color: #CADABA;
-            display: grid;
-            grid-template-columns: 38vw 12vw 12vw 38vw;
-            grid-template-areas:
-                "logo main-page buy time"
-                "logo katalog about-comp mail"
-                "logo size size mail"
-                "confident confident confident confident";
-        }
-
-        .logo,
-        .confident {
-            margin-left: 10vw;
-        }
-
-        .logo,
-        .main-page,
-        .buy,
-        .time,
-        .katalog,
-        .about-comp,
-        .mail,
-        .size,
-        .confident {
-            margin-top: 20px;
-        }
-
-        .confident {
-            margin-bottom: 25px;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .footer {
-            background-color: #CADABA;
-            display: grid;
-            grid-template-columns: 30vw 9vw 9vw 9vw 9vw 9vw 25vw;
-            grid-template-areas:
-                "logo main-page katalog size buy about-comp time"
-                "confident confident confident confident confident confident  mail"
-        }
-
-        .logo,
-        .confident {
-            margin-left: 10vw;
-        }
-
-        .logo,
-        .main-page,
-        .buy,
-        .time,
-        .katalog,
-        .about-comp,
-        .mail,
-        .size,
-        .confident {
-            margin-top: 20px;
-        }
-
-        .confident {
-            margin-bottom: 30px;
-        }
-
-        .main-page,
-        .katalog,
-        .size,
-        .buy,
-        .about-comp,
-        .time {
-            padding-top: 25px;
-        }
-    }
+.about-text {
+    padding-bottom: 70px;
+}

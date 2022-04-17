@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/howtobuy.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/howtobuy.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Document</title>
     <script defer src="/assets/js/lookbook.js"></script>
     <script>
@@ -25,8 +25,8 @@
         });
     </script>
 </head>
-
 <body>
+    <!-- блок ХЕДЕР -->
     <header class="header">
         <div class="header__container">
             <a href="./index.html">
@@ -57,7 +57,7 @@
         </div>
     </header>
     <main class="container">
-        <!--Блок Лукбук-->
+        <!-- блок ЛУКБУК -->
         <div class="slider">
             <div class="slider__wrapper">
                 <div class="slider__items">
@@ -82,7 +82,7 @@
             <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
             <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
         </div>
-        <!-- Блок Каталог -->
+        <!-- блок КАТАЛОГ -->
         <div class="catalog">
             <h2 class="catalog_title">Каталог</h2>
             <div class="catalog_flex-container">
@@ -111,9 +111,10 @@
                 <!-- <button class="catalog_btn_open-catalog">Открыть каталог</button> -->
             </div>
         </div>
+        <!-- блок О НАС -->
         <div class="about">
             <h1 class="about-title">
-                <a id="about"></a>О Компании
+                <a id="about"></a>О нас
             </h1>
             <div class="about-text">
                 <p>Наш бренд желает помочь всем прекрасным женшинам носить дома комфортную и элегантную
@@ -122,19 +123,16 @@
                     VERY
                     NEAT.
                 </p>
-
                 <p>Компания разрабатывает коллекции в Петербурге и шьют одежду из полотен собственного
                     производства.
                     Поэтому
                     могут контролировать процесс пошива изделий и качество их исполнения.
                 </p>
-
                 <p>Одежда лаконичных силуэтов и естественных цветов легко сочетается с другими предметами
                     женского
                     гардероба.
                     Это позволит вам экспериментировать со стилями и одеваться со вкусом.
                 </p>
-
                 <p>Элегантность фасонов, сложные рельефные узоры и необычные принты – то, что отличает
                     продукцию
                     VERY
@@ -144,7 +142,7 @@
             </div>
         </div>
     </main>
-
+    <!-- блок ФУТЕР -->
     <footer class="footer">
         <div class="logo">
             <a href="#"><img src="assets/image/logo.png" alt="логотип" class="logo-img"></a>
@@ -171,5 +169,4 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
