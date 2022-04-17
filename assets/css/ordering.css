@@ -38,7 +38,7 @@ body {
     font-size: 1em;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: 0.3em;
+    margin: 0.5em 0 0.5em 0;
 }
 
 .required {
@@ -53,7 +53,7 @@ body {
     display: flex;
     height: 2.5em;
     padding-left: 0.4em;
-    margin: 0.1em 0 0.9em 0;
+    margin: 0.1em 0 1em 0;
     letter-spacing: 0.02em;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -74,10 +74,20 @@ textarea.ordering__details-field {
 
 /* Форма подтверждения заказа, дублирующаяся из корзины */
 
+.ordering__details-order-title {
+    grid-row: 1 / 1;
+    grid-column: 2/ 2;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
 .ordering__details-confirmation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 2em);
+    grid-template-rows: repeat(4, 2em);
     margin-top: 0.7em;
     font-weight: 100;
 }
@@ -104,8 +114,12 @@ textarea.ordering__details-field {
 
 /* Согласие на обработку персональных данных с включенной по умолчанию галочкой */
 
+.ordering__details-agreement {
+    margin-top: 2em;
+}
+
 .ordering__agreement-label {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .ordering__agreement-label a {
@@ -138,11 +152,10 @@ textarea.ordering__details-field {
     top: 3px;
 }
 
-
 /* Адаптация под планшеты */
 /* Главный контейнер */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1023px) {
     .ordering {
         width: 80vw;
         margin: 0 auto;
@@ -153,10 +166,18 @@ textarea.ordering__details-field {
 
     .ordering__title {
         font-weight: 500;
-        font-size: 1.9em;
+        font-size: 1.5em;
         letter-spacing: 0.02em;
         padding: 3em 0 2em 0;
         text-align: center;
+    }
+
+    /* Контейнер без заголовка */
+
+    .ordering__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 
     /* Форма данных покупателя */
@@ -167,11 +188,12 @@ textarea.ordering__details-field {
     }
 
     .ordering__details-title {
+        width: 35vw;
+        margin: 0.3em 0 0.3em 0;
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1em;
         letter-spacing: 0.02em;
         text-align: center;
-        margin: 1em;
     }
 
     .required {
@@ -184,13 +206,14 @@ textarea.ordering__details-field {
 
     .ordering__details-field {
         display: flex;
+        width: 35vw;
         height: 3em;
         padding-left: 0.4em;
         margin: 0.1em 0 0.9em 0;
         letter-spacing: 0.02em;
         font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 1em;
+        font-weight: 400;
+        font-size: 0.8em;
         border: 0.08em solid #000;
         border-radius: 0.3em;
     }
@@ -204,9 +227,13 @@ textarea.ordering__details-field {
     /* Форма подтверждения заказа, дублирующаяся из корзины */
 
     .ordering__details-confirmation {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 2em);
+        grid-template-rows: repeat(4, 2em);
         margin-top: 0.7em;
         font-weight: 100;
     }
@@ -230,3 +257,17 @@ textarea.ordering__details-field {
     .ordering__details-right {
         justify-self: right;
     }
+
+    /* Согласие на обработку персональных данных с включенной по умолчанию галочкой */
+
+    /* Кнопка */
+
+}
+
+
+
+
+
+/* Адаптация под экраны */
+/* Главный контейнер */
+
