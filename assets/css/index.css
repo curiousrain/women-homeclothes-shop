@@ -23,23 +23,24 @@ body {
 #lookbook-text {
     display: block;
     position: absolute;
-    top: 20vh;
-    left: 20vh;
-    right: 20vh;
-    width: 45vh;
-    height: 7vh;
     background-color: #fff;
     color: black;
     font-family: 'Raleway';
-    font-size: 40px;
+    font-size: 20px;
     font-family: Raleway;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 20px;
     letter-spacing: 0.02em;
     text-align: center;
     padding: 10px;
 }
 
+.slider__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 
 .slider__items {
     counter-reset: slide;
 }
@@ -58,15 +59,20 @@ body {
     font-size: 32px;
     font-weight: bold;
 }
-
+ */
 .slider {
     position: relative;
     overflow: hidden;
-    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
-    margin-bottom: 15%;
+}
+
+.slider__item-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider__wrapper {
@@ -173,13 +179,9 @@ body {
     background-color: #fff;
 }
 
+*/
 /* блок ЛУКБУК - адаптация для мобильных устройств */
 
-@media (min-width: 0px) and (max-width: 767px) {
-    .slider {
-        display: none;
-    }
-}
 
 /* блок КАТАЛОГ */
 
@@ -196,7 +198,8 @@ body {
     line-height: 140%;
     color: #560228;
     font-family: 'Roboto', sans-serif;
-    margin-left: 2em;
+    text-align: center;
+    padding: 1em;
 }
 
 .catalog_flex-container-1_image {
@@ -216,7 +219,7 @@ body {
     color: #560228;
     border: 1px solid #560228;
     font-size: 1em;
-    padding: 1em 2em 1em 2em;
+    padding: 0.75em;
 }
 
 .catalog_btn_open-catalog:hover {
@@ -259,8 +262,8 @@ body {
 /* блок КАТАЛОГ - адаптация для мобильных устройств */
 
 @media (min-width: 0px) and (max-width: 767px) {
-    .catalog_flex-container-2 {
-        display: none;
+    .catalog_flex-container {
+        gap: 5px;
     }
 
     .catalog_btn {
@@ -274,6 +277,59 @@ body {
     }
 }
 
+@media (min-width: 768px) and (max-width:1023px) {
+    .slider {
+        margin-bottom: 4em;
+    }
+
+    #lookbook-text {
+        width: auto;
+        height: auto;
+
+    }
+
+    .catalog_title {
+        font-weight: 500;
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .catalog_flex-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        margin-bottom: 8em;
+    }
+
+    .catalog_flex-container-1_image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .catalog_btn_open-catalog {
+        font-size: 1em;
+        padding: 2em;
+    }
+
+    .info {
+        max-width: 80vw;
+        margin: auto;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .slider {
+        margin-top: 5%;
+        max-height: 600px;
+    }
+
+    .catalog_flex-container {
+        display: flex;
+        gap: 25px;
+    }
+}
+
 /* блок О НАС */
 
 .about-text,
@@ -282,10 +338,11 @@ body {
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0.02em;
-    margin-left: 2em;
+    text-align: center;
     color: #560228;
 }
 
 .about-text {
     padding-bottom: 70px;
+    text-align: justify;
 }
