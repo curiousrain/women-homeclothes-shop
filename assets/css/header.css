@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+.header__form-burger {
+    display: none;
+}
+
 .menu__item li a:hover {
     transition: all .3s;
     color: #a6cfc1;
@@ -196,30 +200,49 @@ a {
     .header__container {
         display: flex;
         max-width: none;
-        flex-direction: column;
+        flex-direction: row;
         padding-top: 1em;
         justify-content: center;
         align-items: center;
     }
 
+    .header__form-burger {
+        display: block;
+        padding-left: 1em;
+    }
+
+    .header__form {
+        display: none;
+    }
+
     .header__container_logo {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .header__menu {
         display: block;
         align-items: center;
-        text-align: center;
-        z-index: 950;
+        text-align: end;
     }
 
     .menu__item {
+        display: flex;
         list-style: none;
         letter-spacing: 0.2em;
         max-height: 0;
         overflow: hidden;
-        background: transparent;
+        position: absolute;
+        top: 0;
+        margin-top: 70px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
     }
 
     #checkbox__toggle:checked~.menu__item {
@@ -230,7 +253,7 @@ a {
 
     .hamburger {
         display: flex;
-        padding: 1.5em 0;
+        padding: 1em 0 1em 0.5em;
         justify-content: center;
     }
 
@@ -249,7 +272,8 @@ a {
     }
 
     .header__menu-item {
-        display: block;
+        display: flex;
+        justify-content: center;
         margin-bottom: 2em;
         text-decoration: none;
         color: #1E5945;
