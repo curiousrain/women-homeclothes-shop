@@ -17,21 +17,22 @@ body {
     font-size: 1.25rem;
     letter-spacing: 0.02em;
     height: 80vh;
-    margin-bottom: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .sizeguides-container {
     display: grid;
-    grid-template-columns: 200px 200px 300px;
-    grid-template-rows: repeat(8, 50px);
-    gap: 10px;
+    grid-template-columns: 12.5rem 12.5rem 18.75rem;
+    grid-template-rows: repeat(8, 3.125rem);
+    gap: 0.625rem;
 }
 
 .sizeguides-title {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     font-weight: 300;
 }
 
@@ -43,20 +44,33 @@ body {
 }
 
 .sizeguides-subtitle {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     font-weight: 300;
 }
 
 .sizeguides-bottom__line {
-    border: 1px solid #CADABA;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border: 0.0625rem solid #CADABA;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.sizeguides-bottom__items {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.sizeguide-bottom__container {
+    display: grid;
+    gap: 1rem;
 }
+
+@media screen and (max-width: 480px){
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 1200px) {}
 
 /*Стили блока футер*/
 
