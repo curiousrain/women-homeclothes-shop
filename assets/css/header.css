@@ -21,14 +21,14 @@
 .hamburger {
     display: none;
     padding-top: 1.25em;
-    font-size: 1.5em;
+    font-size: 24px;
     cursor: pointer;
 }
 
 .hamburger-line {
     display: block;
-    width: 1.3em;
-    height: 0.09em;
+    width: 24px;
+    height: 2px;
     position: relative;
     background-color: #1E5945;
 }
@@ -36,8 +36,8 @@
 .hamburger-line::before,
 .hamburger-line::after {
     display: block;
-    width: 1.3em;
-    height: 0.07em;
+    width: 24px;
+    height: 2px;
     content: '';
     position: absolute;
     transition: all .3s;
@@ -276,8 +276,29 @@
     }
 }
 
-@media screen and (max-width:400px) {
-    .header__container_logo {
-        display: none;
+@media screen and (max-width:468px) {
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+        padding-top: 1em;
+        justify-content: center;
+        align-items: center;
     }
+
+    .menu__item {
+        margin-top: 140px;
+    }
+
+    .header__form-burger {
+        justify-content: center;
+    }
+
+    .hamburger {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
 }
