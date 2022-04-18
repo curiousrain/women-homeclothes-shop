@@ -1,0 +1,209 @@
+/* блок ФУТЕР*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #CADABA;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    gap: 1.5em;
+}
+
+
+.logo {
+    grid-column: 1/3;
+    justify-self: center;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column: 1/3;
+    gap: 1.5em;
+}
+
+.info__nav {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.socials {
+    line-height: 1.5em;
+    align-self: end;
+}
+
+.socials__telegram {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.confident {
+    margin-bottom: 25px;
+    justify-self: center;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+/* 
+.logo {
+    grid-area: logo;
+}
+
+.main-page {
+    grid-area: main-page;
+}
+
+.katalog {
+    grid-area: katalog;
+}
+
+.size {
+    grid-area: size;
+}
+
+.buy {
+    grid-area: buy;
+}
+
+.about-comp {
+    grid-area: about-comp;
+}
+
+.time {
+    grid-area: time;
+}
+
+.confident {
+    grid-area: confident;
+}
+
+.mail {
+    grid-area: mail;
+} */
+
+/* @media (max-width: 839px) {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #fff;
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "main-page buy"
+            "katalog about-comp"
+            "size size"
+            "time time"
+            "mail mail"
+            "confident confident";
+    }
+
+    .logo {
+        justify-self: center;
+        margin: 25px auto 10px auto;
+    }
+
+    .main-page,
+    .katalog,
+    .size {
+        padding: 10px 0px 10px 10vw;
+    }
+
+    .time {
+        padding: 30px 0px 10px 10vw;
+    }
+
+    .mail {
+        padding: 15px 0px 10px 10vw;
+    }
+
+    .confident {
+        padding: 15px 0px 30px 10vw;
+    }
+
+    .buy,
+    .about-comp {
+        padding: 10px 10vw 10px 0px;
+    }
+} */
+
+@media (min-width: 840px) and (max-width: 1199px) {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #fff;
+        display: grid;
+    }
+
+    .logo,
+    .main-page,
+    .buy,
+    .time,
+    .katalog,
+    .about-comp,
+    .mail,
+    .size,
+    .confident {
+        margin-top: 20px;
+    }
+
+    .info {
+        max-width: 80vw;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .footer {
+        background-color: #fff;
+        display: grid;
+    }
+
+    .logo,
+    .main-page,
+    .buy,
+    .time,
+    .katalog,
+    .about-comp,
+    .mail,
+    .size,
+    .confident {
+        margin-top: 20px;
+    }
+
+    .confident {
+        margin-bottom: 30px;
+    }
+
+    .main-page,
+    .katalog,
+    .size,
+    .buy,
+    .about-comp,
+    .time {
+        padding-top: 25px;
+    }
+
+    .info {
+        max-width: 80vw;
+        margin: auto;
+    }
+}

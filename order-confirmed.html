@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение заказа</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/order-confirmed.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="./index.html">
+                <img class="header__container_logo" src="assets/image/header/logo.png" alt="Logotype" />
+            </a>
+            <form class="header__form-burger" action="./search.html" method="get">
+                <input class="header__input" type="text" placeholder="Найти товар...">
+                <button class="header__button" type="submit"></button>
+                <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </form>
+            <nav class="header__menu">
+                <input id="checkbox__toggle" type="checkbox" />
+                <label class="hamburger" for="checkbox__toggle"><span class="hamburger-line"></span></label>
+                <ul class="menu__item">
+                    <li><a href="./index.html" class="header__menu-item">Главная</a></li>
+                    <li><a href="./catalog_max.html" class="header__menu-item">Каталог</a></li>
+                    <li><a href="./size-guides.html" class="header__menu-item">Размеры</a></li>
+                    <li><a href="./howtobuy.html" class="header__menu-item">Как&nbsp;купить</a></li>
+                    <li><a href="#" class="header__menu-item">О&nbsp;нас</a></li>
+                    <li><a href="#" class="header__menu-item">Контакты</a></li>
+                </ul>
+            </nav>
+            <form class="header__form" action="./search.html" method="get">
+                <input class="header__input" type="text" placeholder="Найти товар...">
+                <button class="header__button" type="submit"></button>
+                <a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__confirmation">
+            <h1 class="confirmation__head ">Заказ оформлен</h1>
+            <h2 class="confirmation__subhead"> Спасибо за заказ!</h2>
+            <span class="confirmation__thanks">Мы рады, что вы выбрали (имя&nbsp;магазина)!</span>
+        </div>
+        <div class="main__order">
+            <span class="order__number">Заказ (номер заказа)</span>
+            <hr class="order__line">
+        </div>
+        <div class="main__items">
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+            <span class="items__product">Товары</span>
+            <span class="items__cost">0 руб</span>
+        </div>
+        <div class="main__total">
+            <span class="total__in-all">Итого:</span>
+            <span class="total__ruble">0 руб</span>
+        </div>
+        <div class="main__info">
+            <h2 class="info__customer">Данные получателя</h2>
+            <div class="customer__container">
+                <span class="customer__label">ФИО:</span>
+                <span id="fio" class="customer__value">Григорьева Н. И.</span>
+                <span class="customer__label">Телефон</span>
+                <span id="phone" class="customer__value">12345678910</span>
+                <span class="customer__label">Email:</span>
+                <span id="email" class="customer__value">samplemail@gmail.com</span>
+                <span class="customer__label">Способ оплаты:</span>
+                <span id="paymethod" class="customer__value">безналичный</span>
+            </div>
+        </div>
+        <div class="main__border">
+            <img src="assets/image/order-img/check.svg" alt="" class="border__img_big">
+            <span class="border__cofirmed"><img src="assets/image/order-img/check.svg" alt=""
+                    class="border__img_small">Заказ успешно оформлен</span>
+            <span class="border__connection">Мы свяжемся с вами в ближайшее время!</span>
+            <a href="#" class="border__button">Перейти на главную</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">
+            <a href="#"><img src="assets/image/logo.png" alt="логотип" class="logo-img"></a>
+        </div>
+        <div class="main-page"><a href="./index.html">Главная</a></div>
+        <div class="katalog"><a href="./catalog_max.html">Каталог</a></div>
+        <div class="size"><a href="./size-guides.html">Размерная сетка</a></div>
+        <div class="buy"><a href="./howtobuy.html">Как купить</a></div>
+        <div class="main-page"><a href="#">Главная</a></div>
+        <div class="about-comp"><a href="#about">О компании</a></div>
+        <div class="time">11:00-21:00</div>
+        <div class="confident">
+            ©Все права защищены <br>
+            <a href="#">Политика конфиденциальности</a><br>
+            <a href="#">Публичная оферта</a>
+        </div>
+        <div class="mail">
+            <a href="#">hello@example.ru</a> <br>
+            <a href="#">
+                Подпишись на нас в телеграмм
+                <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
+            </a>
+        </div>
+    </footer>
+    <script src="./assets/js/order-confirmed.js"></script>
+    <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
