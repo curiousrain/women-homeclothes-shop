@@ -48,7 +48,7 @@ a {
     }
 
     .footer {
-        background-color: #CADABA;
+        background-color: #fff;
         display: grid;
         grid-template-columns: 50vw 50vw;
         grid-template-areas:
@@ -97,7 +97,7 @@ a {
     }
 
     .footer {
-        background-color: #CADABA;
+        background-color: #fff;
         display: grid;
         grid-template-columns: 38vw 12vw 12vw 38vw;
         grid-template-areas:
@@ -136,7 +136,7 @@ a {
     }
 
     .footer {
-        background-color: #CADABA;
+        background-color: #fff;
         display: grid;
         grid-template-columns: 30vw 9vw 9vw 9vw 9vw 9vw 25vw;
         grid-template-areas:
