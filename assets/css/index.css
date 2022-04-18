@@ -1,11 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
     /* 
     background: url(/assets/image/back_image/pink-alcohol-ink-background-abstract-fluid-art-painting-design/18449077.jpg);
     Цвет фона и путь к файлу 
     background-size: cover;
     */
-    color: #560228;
+    color: #000;
     /* Цвет текста */
 }
 
@@ -23,16 +30,16 @@ body {
 #lookbook-text {
     display: block;
     position: absolute;
-    background-color: #fff;
+    top: 22vh;
+    left: 20vh;
+    right: 20vh;
+    background-color: rgba(255, 255, 255, 0.45);
     color: black;
-    font-family: 'Raleway';
-    font-size: 20px;
-    font-family: Raleway;
+    font-size: 40px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0.02em;
     text-align: center;
-    padding: 10px;
 }
 
 .slider__img {
@@ -63,16 +70,8 @@ body {
 .slider {
     position: relative;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-}
-
-.slider__item-inner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 600px;
+    margin: 3em auto 3em auto;
 }
 
 .slider__wrapper {
@@ -182,6 +181,17 @@ body {
 */
 /* блок ЛУКБУК - адаптация для мобильных устройств */
 
+@media (min-width: 0px) and (max-width: 767px) {
+    #lookbook-text {
+        top: 15vh;
+    left: 15vh;
+    right: 15vh;
+        background-color: rgba(255, 255, 255, 0.45);
+        color: black;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+}
 
 /* блок КАТАЛОГ */
 
@@ -195,11 +205,9 @@ body {
 
 .catalog_title {
     font-weight: 400;
+    font-size: 1.8em;
     line-height: 140%;
-    color: #560228;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 1em;
+    margin-left: 2em;
 }
 
 .catalog_flex-container-1_image {
@@ -215,11 +223,12 @@ body {
 
 .catalog_btn_open-catalog {
     text-decoration: none;
-    background-color: #eed9e5;
-    color: #560228;
-    border: 1px solid #560228;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
     font-size: 1em;
-    padding: 0.75em;
+    padding: 1em 2em 1em 2em;
+    border-radius: 0.3em;
 }
 
 .catalog_btn_open-catalog:hover {
@@ -248,14 +257,12 @@ body {
 .catalog_flex-container-1_image-desc-1,
 .catalog_flex-container-2_image-desc-1,
 .catalog_flex-container-3_image-desc-1 {
-    color: #2F4538;
     height: 1.5em;
 }
 
 .catalog_flex-container-1_image-desc-2,
 .catalog_flex-container-2_image-desc-2,
 .catalog_flex-container-3_image-desc-2 {
-    color: #2F4538;
     opacity: .3;
 }
 
@@ -267,13 +274,28 @@ body {
     }
 
     .catalog_btn {
-        margin: 3em;
+        margin: 0;
+        padding-top: 2em;
     }
 
     .catalog_flex-container {
         display: inline-flex;
         width: 80vw;
         justify-content: center;
+    }
+
+    .catalog_title {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .catalog_flex-container-1_image-desc-1,
+    .catalog_flex-container-1_image-desc-2,
+    .catalog_flex-container-3_image-desc-1,
+    .catalog_flex-container-3_image-desc-2 {
+        font-size: 0.9em;
     }
 }
 
@@ -332,17 +354,39 @@ body {
 
 /* блок О НАС */
 
-.about-text,
-.about-title {
-    font-family: 'Roboto', sans-serif;
+.about-text {
+    margin: 0;
+    padding-bottom: 70px;
     font-weight: 400;
     line-height: 140%;
+    font-size: 1.2em;
     letter-spacing: 0.02em;
-    text-align: center;
-    color: #560228;
+    text-transform: none;
 }
 
-.about-text {
-    padding-bottom: 70px;
-    text-align: justify;
+.about-title {
+    font-weight: 400;
+    font-size: 1.8em;
+    letter-spacing: 0.02em;
+    margin-left: 2em;
+    padding-top: 2em;
+}
+
+/* блок О НАС - адаптация для мобильных устройств*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .about-title {
+        margin: 0;
+        padding: 4em 0 1em 0;
+        font-weight: 300;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .about-text {
+        margin: 0;
+        padding-bottom: 70px;
+        font-weight: 300;
+        font-size: 0.9em;
+    }
 }
