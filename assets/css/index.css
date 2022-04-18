@@ -37,11 +37,17 @@ body {
     color: black;
     font-size: 40px;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 20px;
     letter-spacing: 0.02em;
     text-align: center;
 }
 
+.slider__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* 
 .slider__items {
     counter-reset: slide;
 }
@@ -60,7 +66,7 @@ body {
     font-size: 32px;
     font-weight: bold;
 }
-
+ */
 .slider {
     position: relative;
     overflow: hidden;
@@ -172,6 +178,7 @@ body {
     background-color: #fff;
 }
 
+*/
 /* блок ЛУКБУК - адаптация для мобильных устройств */
 
 @media (min-width: 0px) and (max-width: 767px) {
@@ -183,7 +190,6 @@ body {
         color: black;
         font-size: 1.3em;
         font-weight: 400;
-    
     }
 }
 
@@ -263,8 +269,8 @@ body {
 /* блок КАТАЛОГ - адаптация для мобильных устройств */
 
 @media (min-width: 0px) and (max-width: 767px) {
-    .catalog_flex-container-2 {
-        display: none;
+    .catalog_flex-container {
+        gap: 5px;
     }
 
     .catalog_btn {
@@ -290,6 +296,59 @@ body {
     .catalog_flex-container-3_image-desc-1,
     .catalog_flex-container-3_image-desc-2 {
         font-size: 0.9em;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .slider {
+        margin-bottom: 4em;
+    }
+
+    #lookbook-text {
+        width: auto;
+        height: auto;
+
+    }
+
+    .catalog_title {
+        font-weight: 500;
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .catalog_flex-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        margin-bottom: 8em;
+    }
+
+    .catalog_flex-container-1_image {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .catalog_btn_open-catalog {
+        font-size: 1em;
+        padding: 2em;
+    }
+
+    .info {
+        max-width: 80vw;
+        margin: auto;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .slider {
+        margin-top: 5%;
+        max-height: 600px;
+    }
+
+    .catalog_flex-container {
+        display: flex;
+        gap: 25px;
     }
 }
 

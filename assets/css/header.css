@@ -132,12 +132,11 @@
         color: #1E5945;
         font-size: 1.1em;
     }
-
 }
 
 /* media query for tablet */
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width:767px) and (max-width:1023px) {
     .header {
         font-size: 0.80em;
     }
@@ -230,7 +229,7 @@
         overflow: hidden;
         position: absolute;
         top: 0;
-        margin-top: 70px;
+        margin-top: 80px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -276,7 +275,7 @@
     }
 }
 
-@media screen and (max-width:468px) {
+@media screen and (max-width:480px) {
     .header__container {
         display: flex;
         flex-direction: column;
@@ -299,6 +298,4 @@
         padding-right: 0;
         padding-left: 0;
     }
-
-
 }
