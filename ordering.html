@@ -34,22 +34,24 @@
                 <label class="ordering__details-title" for="user-comment">Комментарий к заказу</label>
                 <textarea id="user-comment" class="ordering__details-field" name="comment" required placeholder="Напишите текст здесь"></textarea>
             </form>
-            <p class="ordering__details-order-title">Ваш заказ</p>
-            <div class="ordering__details-confirmation">
-                <span class="ordering__details-item">Товар</span>
-                <span class="ordering__details-cost ordering__details-right">Цена</span>
-                <span class="ordering__details-product1">Футболка арт.001</span>
-                <span class="ordering__details-price1 ordering__details-right">999 руб.</span>
-                <span class="ordering__details-product2">Брюки арт.088</span>
-                <span class="ordering__details-price2 ordering__details-right">3 790 руб.</span>
-                <span class="ordering__details-total">Итого</span>
-                <span class="ordering__details-total ordering__details-right">4 789 руб.</span>
+            <div class="ordering-confirm">
+                <p class="ordering__details-order-title">Ваш заказ</p>
+                <div class="ordering__details-confirmation">
+                    <span class="ordering__details-item">Товар</span>
+                    <span class="ordering__details-cost ordering__details-right">Цена</span>
+                    <span class="ordering__details-product1">Футболка арт.001</span>
+                    <span class="ordering__details-price1 ordering__details-right">999 руб.</span>
+                    <span class="ordering__details-product2">Брюки арт.088</span>
+                    <span class="ordering__details-price2 ordering__details-right">3 790 руб.</span>
+                    <span class="ordering__details-total">Итого</span>
+                    <span class="ordering__details-total-right ordering__details-right">4 789 руб.</span>
+                </div>
+                <div class="ordering__details-agreement">
+                    <input id="agreement" class="ordering__agreement-input" checked type="checkbox" name="agreement" />
+                    <label for="agreement" class="ordering__agreement-label"><span><span class="required">*</span>Нажимая на кнопку «Oтправить» вы подтверждаете свое согласие на обработку персональных данных, ознакомившись с <a href="#">политикой конфиденциальности</a> и <a href="#">публичной офертой</a> нашей компании.</span></label>
+                </div>
+                <button class="ordering__button" type="submit">Отправить</button>
             </div>
-            <div class="ordering__details-agreement">
-                <input id="agreement" class="ordering__agreement-input" checked type="checkbox" name="agreement" />
-                <label for="agreement" class="ordering__agreement-label"><span><span class="required">*</span>Нажимая на кнопку «Oтправить» вы подтверждаете свое согласие на обработку персональных данных, ознакомившись с <a href="#">политикой конфиденциальности</a> и <a href="#">публичной офертой</a> нашей компании.</span></label>
-            </div>
-            <button class="ordering__button" type="submit">Отправить</button>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
