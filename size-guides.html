@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/size-guides.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
 <body>
@@ -80,27 +81,30 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="logo">
-            <a href="#"><img src="assets/image/logo.png" alt="логотип" class="logo-img"></a>
-        </div>
-        <div class="main-page"><a href="#">Главная</a></div>
-        <div class="katalog"><a href="#">Каталог</a></div>
-        <div class="size"><a href="#">Размерная сетка</a></div>
-        <div class="buy"><a href="#">Как купить</a></div>
-        <div class="about-comp"><a href="#about">О компании</a></div>
-        <div class="time">11:00-21:00</div>
-        <div class="confident">
-            ©Все права защищены <br>
-            <a href="#">Политика конфиденциальности</a><br>
-            <a href="#">Публичная оферта</a>
-        </div>
-        <div class="mail">
-            <a href="#">hello@example.ru</a> <br>
-            <a name="about"></a>
-            <a href="#">
-                Подпишись на нас в телеграмм
-                <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
-            </a>
+        <div class="footer__inner">
+            <div class="logo">
+                <a href="#"><img src="./assets/image/header/logo.png" alt="логотип" class="logo-img"></a>
+            </div>
+            <nav class="footer__nav">
+                <a href="./index.html">Главная</a>
+                <a href="./catalog_max.html">Каталог</a>
+                <a href="./size-guides.html">Размерная сетка</a>
+                <a href="./howtobuy.html">Как купить</a>
+                <a href="#about">О компании</a>
+            </nav>
+            <span class="time">11:00-21:00</span>
+            <div class="socials">
+                <a href="mailto:hello@example.ru" class="social__email">hello@example.ru</a> <br>
+                <a href="https://web.telegram.org/" target="blank" class="socials__telegram">
+                    Подпишись на нас <wbr> в телеграм
+                    <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграм">
+                </a>
+            </div>
+            <div class="confident">
+                ©Все права защищены <br>
+                <a href="#">Политика конфиденциальности</a> <br>
+                <a href="#">Публичная оферта</a>
+            </div>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
