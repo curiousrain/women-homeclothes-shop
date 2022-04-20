@@ -6,7 +6,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9em;
-    text-transform: uppercase;
     /* 
     background: url(/assets/image/back_image/pink-alcohol-ink-background-abstract-fluid-art-painting-design/18449077.jpg);
     Цвет фона и путь к файлу 
@@ -20,8 +19,6 @@ body {
     width: 80vw;
     margin: 0 auto;
 }
-
-/* блок ЛУКБУК */
 
 .slider {
     position: relative;
@@ -48,9 +45,6 @@ body {
 #lookbook-text {
     display: block;
     position: absolute;
-    top: 22vh;
-    left: 20vh;
-    right: 20vh;
     background-color: rgba(255, 255, 255, 0.45);
     color: black;
     font-size: 20px;
@@ -60,48 +54,13 @@ body {
     text-align: center;
 }
 
+
 .slider__img {
     width: 100%;
     object-fit: cover;
     height: 80vw;
 }
 
-/* 
-.slider__items {
-    counter-reset: slide;
-}
-
-.slider__item {
-    counter-increment: slide;
-}
-
-.slider__item>div::before {
-    content: counter(slide);
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #fff;
-    font-style: italic;
-    font-size: 32px;
-    font-weight: bold;
-}
- */
-
-/* блок ЛУКБУК - адаптация для мобильных устройств */
-
-@media (min-width: 0px) and (max-width: 767px) {
-    #lookbook-text {
-        top: 15vh;
-    left: 15vh;
-    right: 15vh;
-        background-color: rgba(255, 255, 255, 0.45);
-        color: black;
-        font-size: 1.3em;
-        font-weight: 400;
-    }
-}
-
-/* блок КАТАЛОГ */
 .catalog__flex-container_mobile {
     margin-bottom: 5em;
 }
@@ -113,15 +72,6 @@ body {
     margin-top: 1em;
     flex-direction: column;
 }
-
-/* .catalog__flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 1em;
-} */
-
 
 .catalog__flex-container_desktop {
     display: none;
@@ -153,8 +103,7 @@ body {
     color: #000;
     border: 1px solid #000;
     font-size: 1em;
-    padding: 1em 2em 1em 2em;
-    border-radius: 0.3em;
+    padding: 1em;
 }
 
 .catalog__btn_open-catalog:hover {
@@ -170,10 +119,7 @@ body {
 
 .catalog__flex-container_image-desc-1,
 .catalog__flex-container_image-desc-2 {
-    position: relative;
     text-align: center;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
 }
 
 .catalog__flex-container_image-desc-1 {
@@ -193,6 +139,8 @@ body {
     font-size: 1.2em;
     letter-spacing: 0.02em;
     text-transform: none;
+    text-align: center;
+    color: #560228;
 }
 
 .about-text {
@@ -201,14 +149,16 @@ body {
 }
 
 
-/* блок КАТАЛОГ - адаптация для мобильных устройств */
-
-
 @media screen and (min-width: 768px) {
 
     #lookbook-text {
         width: auto;
         height: auto;
+        padding: 0.5em 2.5em;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1em;
+        letter-spacing: 0.02em;
     }
 
     .catalog__title {
@@ -257,6 +207,7 @@ body {
         width: 100%;
         object-fit: cover;
         height: 64vw;
+        object-position: center 155px;
     }
 
     .catalog_title {
@@ -285,6 +236,3 @@ body {
         text-align: left;
     }
 }
-
-/* блок О НАС */
-/* блок О НАС */
