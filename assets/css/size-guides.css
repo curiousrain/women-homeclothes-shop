@@ -42,6 +42,12 @@ body {
     background-color: #CADABA;
 }
 
+.sizeguides-subtitle,
+.sizeguides-bottom__items {
+    font-size: 1rem;
+    color: rgb(60, 60, 60);
+}
+
 .sizeguides-subtitle {
     margin-top: 3.125rem;
     font-weight: 300;
@@ -68,7 +74,15 @@ body {
     }
 
     .sizeguides-subtitle {
-        font-size: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .sizeguides-subtitle,
+    .sizeguides-bottom__items {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        color: rgb(60, 60, 60);
     }
 
     .sizeguides-container {
@@ -82,6 +96,18 @@ body {
 @media screen and (max-width: 768px) {
     .sizeguides {
         margin: 1rem;
+    }
+
+    .sizeguides-subtitle {
+        margin-top: 2rem;
+    }
+
+    .sizeguides-subtitle,
+    .sizeguides-bottom__items {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        color: rgb(60, 60, 60);
     }
 
     .sizeguides-container {
