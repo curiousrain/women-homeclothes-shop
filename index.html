@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/flickity.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
@@ -49,57 +50,74 @@
     </header>
     <main class="container">
         <!-- блок ЛУКБУК -->
-        <div class="slider">
-            <div class="slider__wrapper">
-                <div class="slider__items">
-                    <div class="slider__item">
-                        <div class="slider__item-inner">
-                            <img id="lookbook-image" src="./assets/image/101.png" alt="lookbook" width="100%">
-                            <h2 id="lookbook-text">Lookbook</h2>
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__item-inner"><img src="./assets/image/102.png" alt="lookbook" class="slider__img">
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__item-inner"><img src="./assets/image/103.png" alt="lookbook" class="slider__img"></div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="slider__item-inner"><img src="./assets/image/104.png" alt="lookbook" class="slider__img"></div>
-                    </div>
+        <div class="slider" data-flickity='{ "groupCells": true, "wrapAround": true }'>
+            <div class="slider__item">
+                <div class="slider__item-inner">
+                    <img id="lookbook-image" src="./assets/image/lookbook/101.png" alt="lookbook" class="slider__img">
+                    <h2 id="lookbook-text">LOOKBOOK</h2>
                 </div>
             </div>
-            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+            <div class="slider__item">
+                <div class="slider__item-inner"><img src="./assets/image/lookbook/102.png" alt="lookbook"
+                        class="slider__img">
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-inner"><img src="./assets/image/lookbook/103.png" alt="lookbook"
+                        class="slider__img">
+                </div>
+            </div>
+            <div class="slider__item">
+                <div class="slider__item-inner"><img src="./assets/image/lookbook/104.png" alt="lookbook"
+                        class="slider__img">
+                </div>
+            </div>
         </div>
         <!-- блок КАТАЛОГ -->
         <div class="catalog">
             <h2 class="catalog_title">Каталог</h2>
-            <div class="catalog_flex-container">
-                <div class="catalog_flex-container-1">
-                    <img class="catalog_flex-container-1_image catalog_flex-container-img" src="./assets/image/index_catalog_1.jpg"
-                        alt="Ассортимент каталога" />
-                    <div class="catalog_flex-container-1_image-desc-1">Толстовка</div>
-                    <div class="catalog_flex-container-1_image-desc-2">3200 руб.</div>
+            <div class="catalog__flex-container_mobile" data-flickity='{ "groupCells": true, "wrapAround": true }'>
+                <div class="catalog__flex-container">
+                    <img class="catalog__flex-container-img"
+                        src="./assets/image/index_catalog/index_catalog_1.jpg" alt="Ассортимент каталога" />
+                    <a href="#" class="catalog__flex-container_image-desc-1">Толстовка</a>
+                    <div class="catalog__flex-container_image-desc-2">3200 руб.</div>
                 </div>
-                <div class="catalog_flex-container-2">
-                    <img class="catalog_flex-container-1_image catalog_flex-container-img" src="./assets/image/index_catalog_2.jpg"
-                        alt="Ассортимент каталога" />
-                    <div class="catalog_flex-container-2_image-desc-1">Домашний комплект</div>
-                    <div class="catalog_flex-container-2_image-desc-2">3000 руб.</div>
+                <div class="catalog__flex-container">
+                    <img class="catalog__flex-container-img"
+                        src="./assets/image/index_catalog/index_catalog_2.jpg" alt="Ассортимент каталога" />
+                    <a href="#" class="catalog__flex-container_image-desc-1">Домашний комплект</a>
+                    <div class="catalog__flex-container_image-desc-2">3000 руб.</div>
                 </div>
-                <div class="catalog_flex-container-3">
-                    <img class="catalog_flex-container-1_image catalog_flex-container-img" src="./assets/image/index_catalog_3.jpg"
-                        alt="Ассортимент каталога" />
-                    <div class="catalog_flex-container-3_image-desc-1">Майка</div>
-                    <div class="catalog_flex-container-3_image-desc-2">1700 руб.</div>
+                <div class="catalog__flex-container">
+                    <img class="catalog__flex-container-img"
+                        src="./assets/image/index_catalog/index_catalog_3.jpg" alt="Ассортимент каталога" />
+                    <a href="#" class="catalog__flex-container_image-desc-1">Майка</a>
+                    <div class="catalog__flex-container_image-desc-2">1700 руб.</div>
                 </div>
             </div>
-            <div class="catalog_btn">
-                <a href="catalog_max.html" class="catalog_btn_open-catalog" role="button">Открыть каталог</a>
-                <!-- <button class="catalog_btn_open-catalog">Открыть каталог</button> -->
-                <a href="./catalog_max.html" class="catalog_btn_open-catalog" role="button">Открыть каталог</a>
+            <div class="catalog__flex-container_desktop">
+                <div class="catalog__flex-container">
+                    <img class="catalog__flex-container-img"
+                        src="./assets/image/index_catalog/index_catalog_1.jpg" alt="Ассортимент каталога" />
+                    <div class="catalog__flex-container_image-desc-1">Толстовка</div>
+                    <div class="catalog__flex-container_image-desc-2">3200 руб.</div>
+                </div>
+                <div class="catalog__flex-container">
+                    <img class="catalog__flex-container-img"
+                        src="./assets/image/index_catalog/index_catalog_2.jpg" alt="Ассортимент каталога" />
+                    <div class="catalog__flex-container_image-desc-1">Домашний комплект</div>
+                    <div class="catalog__flex-container_image-desc-2">3000 руб.</div>
+                </div>
+                <div class="catalog__flex-container">
+                    <img class="catalog__flex-container-img"
+                        src="./assets/image/index_catalog/index_catalog_3.jpg" alt="Ассортимент каталога" />
+                    <div class="catalog__flex-container_image-desc-1">Майка</div>
+                    <div class="catalog__flex-container_image-desc-2">1700 руб.</div>
+                </div>
+            </div>
+            <div class="catalog__btn">
+                <a href="./catalog_max.html" class="catalog__btn_open-catalog" role="button">Открыть каталог</a>
             </div>
         </div>
         <!-- блок О НАС -->
@@ -135,68 +153,37 @@
     </main>
     <!-- блок ФУТЕР -->
     <footer class="footer">
-        <div class="logo">
-            <a href="#"><img src="./assets/image/logo.png" alt="логотип" class="logo-img"></a>
-        </div>
-        <div class="main-page"><a href="./index.html">Главная</a></div>
-        <div class="katalog"><a href="./catalog_max.html">Каталог</a></div>
-        <div class="size"><a href="./size-guides.html">Размерная сетка</a></div>
-        <div class="buy"><a href="./howtobuy.html">Как купить</a></div>
-        <div class="about-comp"><a href="#about">О компании</a></div>
-        <div class="time">11:00-21:00</div>
-        <div class="confident">
-            ©Все права защищены <br>
-            <a href="#">Политика конфиденциальности</a><br>
-            <a href="#">Публичная оферта</a>
-        </div>
-        <div class="mail">
-            <a href="#">hello@example.ru</a> <br>
-            <a href="https://web.telegram.org/z/">
-                Подпишись на нас в телеграмм
-                <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграмм">
-            </a>
-        <div class="info">
-            <nav class="info__nav">
-                <!-- <div class="main-page"></div> -->
-                <!-- <div class="katalog"></div> -->
-                <!-- <div class="size"></div> -->
-                <!-- <div class="buy"></div> -->
+        <div class="footer__inner">
+            <div class="logo">
+                <a href="#"><img src="./assets/image/header/logo.png" alt="логотип" class="logo-img"></a>
+            </div>
+            <nav class="footer__nav">
                 <a href="./index.html">Главная</a>
                 <a href="./catalog_max.html">Каталог</a>
                 <a href="./size-guides.html">Размерная сетка</a>
                 <a href="./howtobuy.html">Как купить</a>
                 <a href="#about">О компании</a>
             </nav>
-            <!-- <div class="about-comp"></div> -->
             <span class="time">11:00-21:00</span>
             <div class="socials">
                 <a href="mailto:hello@example.ru" class="social__email">hello@example.ru</a> <br>
                 <a href="https://web.telegram.org/" target="blank" class="socials__telegram">
-                    Подпишись на нас в телеграм
+                    Подпишись на нас <wbr> в телеграм
                     <img style="width: 20px;" src="https://cdn-icons-png.flaticon.com/512/87/87413.png" alt="телеграм">
                 </a>
             </div>
             <div class="confident">
                 ©Все права защищены <br>
-                <a href="#">Политика конфиденциальности</a><br>
+                <a href="#">Политика конфиденциальности</a> <br>
                 <a href="#">Публичная оферта</a>
             </div>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://kit.fontawesome.com/ca66c4c9f6.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/catalog.js"></script>
     <script src="./assets/js/lookbook.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // инициализация слайдера
-            var slider = new SimpleAdaptiveSlider('.slider', {
-                loop: true,
-                autoplay: false,
-                swipe: true
-            });
-        });
-    </script>
-
+    <script src="./assets/js/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
