@@ -179,6 +179,10 @@ body {
 
 /* Корзина мобильная версия */
 @media (min-width: 0px) and (max-width: 767px) {
+    .container {
+        margin: 0.2em;
+    }
+
     .cart-table-names {
         display: none;
     }
@@ -225,5 +229,11 @@ body {
     .cart-total-btn,
     .cart-registration-btn {
         margin: 1em 0em;
+    }
+
+    .cart-product-price,
+    .cart-product-quantity,
+    .cart-total-price {
+        margin: 1em;
     }
 }
