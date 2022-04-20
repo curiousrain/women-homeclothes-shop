@@ -1,6 +1,6 @@
 .container-item {
     display: flex;
-    padding: 5%;
+    padding: 3%;
     justify-content: center;
     width: 80vw;
     margin: 0 auto;
@@ -26,7 +26,7 @@ h3 {
     flex: 2;
     justify-self: left;
     align-content: center;
-    padding-top: 20vh;
+    padding-top: 10vh;
     padding-left: 2vh;
 }
 
@@ -106,7 +106,7 @@ h3 {
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-    height: 61px;
+    height: 5rem;
     left: 79px;
     top: 0px;
     padding-left: 3%;
@@ -128,8 +128,7 @@ h3 {
 
 .item-button:hover {
     background: #21421E;
-    box-shadow: 0 15px 20px #21421E (46, 229, 157, .4);
-    color: white;
+    box-shadow: 0 15px 20px #21421E (46, 229, 157, .4) white;
     transform: translateY (-2px);
 }
 
