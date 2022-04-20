@@ -52,6 +52,11 @@ body {
         margin: 0;
         margin-bottom: 1rem;
     }
+
+    .title-delivery {
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -62,6 +67,11 @@ body {
         width: 40%;
         margin: 0;
         margin-bottom: 1rem;
+    }
+
+    .title-delivery {
+        font-weight: 400;
+        font-size: 1.8rem;
     }
 }
 
