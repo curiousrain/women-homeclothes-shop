@@ -203,7 +203,7 @@ body {
 
     .cart-product {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
         grid-template-rows: 1fr;
         align-items: center;
         margin-bottom: 0.5em;
@@ -221,8 +221,8 @@ body {
     }
 
     .cart-buttons {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr;
         justify-content: center;
     }
 
