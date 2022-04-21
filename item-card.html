@@ -51,18 +51,18 @@
                 <p>Выберите размер</p>
             </div>
             <div class="item-sizes">
-                <div class="item-size-number-button">S</a></div>
-                <div class="item-size-number-button">M</a></div>
-                <div class="item-size-number-button">L</a></div>
-                <div class="item-size-number-button">XL</a></div>
+                <div class="item-size-number-button">S</div>
+                <div class="item-size-number-button">M</div>
+                <div class="item-size-number-button">L</div>
+                <div class="item-size-number-button">XL</div>
             </div>
             <div class="item-about"> Описание товара, его состава и еще что-то</div>
             <div class="item-buy">
-                <form>
+                <form action="/ordering.html" method="get">
                     <input type="number" id="number" placeholder="1" min="1" max="20" class="item-basket-number">
                 </form>
-                <button class="button-buy"> <a href="./ordering.html" class="item-button"> добавить в
-                        корзину</a> </button>
+                <form action="/ordering.html" method="get">
+                    <button class="item-button"> добавить в корзину </button></form>
             </div>
         </div>
     </div>
@@ -91,6 +91,7 @@
                 <a href="#">Политика конфиденциальности</a> <br>
                 <a href="#">Публичная оферта</a>
             </div>
+
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

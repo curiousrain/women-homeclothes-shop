@@ -1,6 +1,6 @@
 .container-item {
     display: flex;
-    padding: 5%;
+    padding: 3%;
     justify-content: center;
     width: 80vw;
     margin: 0 auto;
@@ -26,7 +26,7 @@ h3 {
     flex: 2;
     justify-self: left;
     align-content: center;
-    padding-top: 20vh;
+    padding-top: 10vh;
     padding-left: 2vh;
 }
 
@@ -106,7 +106,7 @@ h3 {
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
-    height: 61px;
+    height: 5rem;
     left: 79px;
     top: 0px;
     padding-left: 3%;
@@ -128,65 +128,124 @@ h3 {
 
 .item-button:hover {
     background: #21421E;
-    box-shadow: 0 15px 20px #21421E (46, 229, 157, .4);
-    color: white;
+    box-shadow: 0 15px 20px #21421E (46, 229, 157, .4) white;
     transform: translateY (-2px);
 }
 
-/* media query for tablet */
 
-@media screen and (min-width:767px) and (max-width:1023px) {
+/* media */
+
+@media (max-width: 575px) {
     .container-item {
         display: flex;
         flex-direction: column;
         max-width: 100%;
-        margin: 0;
-        padding-top: 1em;
+        margin: auto;
+        padding: 0%;
         justify-content: center;
         align-items: center;
     }
 
     .item-discrip {
-        flex: 2;
         justify-self: center;
         align-content: center;
+        padding: initial;
+    }
+.foto{
+    height: auto;
+}
+h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom: 3;
+    padding-left: 20%;
+    padding-top: 1vh;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+}
 
+@media (min-width: 576px) and (max-width: 767px) {
+    .container-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        padding: initial;
     }
 
-    /* media query for mobile */
+    .item-discrip {
+        justify-self: center;
+        align-content: center;
+    }
+    .foto{
+        height: auto;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        padding-bottom: 2vh;
+        padding-left: 20%;
+        padding-top: 1vh;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+}
 
-    @media screen and (max-width:767px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+
+    .item-discrip {
+        justify-self: center;
+        align-content: center;
+        padding: unset;
+    }
+    .foto{
+        height: auto;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        padding-bottom: 3vh;
+        padding-left: 20%;
+        padding-top: 1vh;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+}
+
+    @media (min-width: 992px) and (max-width: 1199px) {
         .container-item {
             display: flex;
             flex-direction: column;
             max-width: 100%;
             margin: 0;
-            padding-top: 1em;
+            padding: 0%;
             justify-content: center;
             align-items: center;
+            padding: initial;
         }
 
         .item-discrip {
-            flex: 2;
             justify-self: center;
             align-content: center;
-
         }
-
-        @media screen and (max-width:480px) {
-            .container-item {
-                display: flex;
-                flex-direction: column;
-                max-width: 100%;
-                margin: 0;
-                padding-top: 1em;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .item-discrip {
-                flex: 2;
-                justify-self: center;
-                align-content: center;
-            }
+        .foto{
+            height: auto;
         }
+    }
