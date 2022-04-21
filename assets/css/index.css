@@ -102,7 +102,7 @@ body {
     color: #000;
     border: 1px solid #000;
     font-size: 1em;
-    padding: 1em;
+    padding: 1em 0.5em;
 }
 
 .catalog__btn_open-catalog:hover {
@@ -218,7 +218,6 @@ body {
     .catalog__flex-container_desktop {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
         margin-bottom: 3em;
         gap: 1em;
     }
