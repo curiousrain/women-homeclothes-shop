@@ -204,7 +204,6 @@ body {
     .slider__img {
         width: 100%;
         object-fit: cover;
-        height: 64vw;
         object-position: center 155px;
     }
 
